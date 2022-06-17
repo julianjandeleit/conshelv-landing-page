@@ -3,29 +3,36 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{ title }}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <html>
+    <head> <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- [if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif] -->
 
-        <header>
-            <h1>{{ title }}</h1>
-        </header>
+    <!-- HEADER shown as hero with content  -->
+    <header>
+    <div class="hero min-h-screen" style="background-image: url(https://api.lorem.space/image/fashion?w=1000&h=800);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">{{ title }}</h1>
+          <p class="mb-5">{{ showDataAvailable }}</p>
+          <!--<button class="btn btn-primary">Get Started</button>-->
+        </div>
+      </div>
+    </div>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
 
-        <main>
-            {{ content | safe }}
-        </main>
-        <a class="btn btn-primary">Button</a>
-        <div class="max-w-sm p-3 m-4 rounded-lg shadow-lg">Testing tailwind</div>
-        <script src="" async defer></script>
-    </body>
+    <script src="" async defer></script>
+  </body>
 </html>
