@@ -1,0 +1,59 @@
+---
+title: "Conshelv."
+description: "The place for pictures"
+content: ""
+---
+
+<!DOCTYPE html data-theme="conshelv">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+  <html>
+    <head> <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!-- [if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif] -->
+    <header>
+      <div class="hero min-h-screen" style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content absolute left-0 ml-24 text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">{{ title }}</h1>
+            <p class="mb-5 text-3xl">{{ description }}</p>
+          </div>
+        </div>
+      </div>
+      <link rel="shortcut icon" href="/favicon.ico">
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+          <div class="hero min-h-screen bg-primary relative">
+        <div class="hero-overlay"></div>
+        <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">about</h1>
+            <p class="mb-5 text-3xl"> Mytext</p>
+          </div>
+        </div>
+      </div>
+                <div class="hero min-h-screen bg-secondary relative">
+        <div class="hero-overlay"></div>
+        <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">How and Why</h1>
+            <p class="mb-5 text-3xl"> Test</p>
+          </div>
+        </div>
+      </div>
+    <script src="" async defer></script>
+  </body>
+</html>
