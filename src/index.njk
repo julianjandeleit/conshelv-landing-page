@@ -1,6 +1,7 @@
 ---
 title: "Conshelv."
-description: "The place for pictures"
+slogan: "The place for pictures"
+description: "Take back control of your photo collection and save all your images on a <b>personal Shelv</b>. It seamlessly integrates with your devices to make handling photos as clutter-free as ever! "
 content: ""
 ---
 
@@ -15,45 +16,61 @@ content: ""
     <title>{{ title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css">
-  </head>
+  <link rel="stylesheet" href="/style.css"> </head>
   <body>
     <!-- [if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif] -->
     <header>
-      <div class="hero min-h-screen" style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
-        <div class="hero-overlay bg-opacity-60"></div>
+      <div
+        class="hero min-h-screen relative"
+        style="background-image:
+          url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
+        <div class="hero-overlay bg-opacity-60">
+          <div class="navbar bg-gradient-to-r from-[rgba(255,255,255,0.25)] via-transparent to-transparent">
+            <div class="flex-none w-10">
+              <a href="index.html">
+                <img src="/favicon.ico"/>
+              </a>
+            </div>
+            <div class="flex-1">
+              <a href="index.html" class="ml-5 normal-case text-2xl">{{ title }}</a>
+            </div>
+          </div>
+        </div>
         <div class="hero-content absolute left-0 ml-24 text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">{{ title }}</h1>
-            <p class="mb-5 text-3xl">{{ description }}</p>
+          <div class="max-w-none">
+            <h1 class="mb-5 text-2xl font-bold">{{ slogan | safe }}</h1>
+            <p class="mb-5 text-xl">{{ description | safe }}</p>
           </div>
         </div>
       </div>
-      <link rel="shortcut icon" href="/favicon.ico">
-    </header>
+      <link rel="shortcut icon" href="/favicon.ico"></header>
     <main>
       {{ content | safe }}
     </main>
-          <div class="hero min-h-screen bg-primary relative">
-        <div class="hero-overlay"></div>
-        <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">about</h1>
-            <p class="mb-5 text-3xl"> Mytext</p>
-          </div>
+    <div class="hero min-h-screen bg-primary relative">
+      <div class="hero-overlay"></div>
+      <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">about</h1>
+          <p class="mb-5 text-3xl">
+            Mytext
+          </p>
         </div>
       </div>
-                <div class="hero min-h-screen bg-secondary relative">
-        <div class="hero-overlay"></div>
-        <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">How and Why</h1>
-            <p class="mb-5 text-3xl"> Test</p>
-          </div>
+    </div>
+    <div class="hero min-h-screen bg-secondary relative">
+      <div class="hero-overlay"></div>
+      <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">How and Why</h1>
+          <p class="mb-5 text-3xl">
+            transparent
+          </p>
         </div>
       </div>
-    <script src="" async defer></script>
+    </div>
+    <script src="" async="async" defer="defer"></script>
   </body>
 </html>
