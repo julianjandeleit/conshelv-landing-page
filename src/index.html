@@ -1,5 +1,4 @@
 ---
-title: "Conshelv."
 slogan: "The place for pictures"
 description: "Take back control of your photo collection and save all your images on a <b>personal Shelv</b>. It seamlessly integrates with your devices to make handling photos as clutter-free as ever! "
 content: ""
@@ -13,7 +12,7 @@ content: ""
   <html>
     <head> <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ title }}</title>
+    <title>{{ site.title }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/style.css"> </head>
@@ -27,50 +26,21 @@ content: ""
         style="background-image:
           url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
         <div class="hero-overlay bg-opacity-60">
-          <div class="navbar bg-gradient-to-r from-[rgba(255,255,255,0.25)] via-transparent to-transparent">
-            <div class="flex-none w-10">
-              <a href="index.html">
-                <img src="/favicon.ico"/>
-              </a>
-            </div>
-            <div class="flex-1">
-              <a href="index.html" class="ml-5 normal-case text-2xl">{{ title }}</a>
-            </div>
-          </div>
+        {% include "partials/navbar.liquid" %}
         </div>
         <div class="hero-content absolute left-0 ml-24 text-neutral-content">
           <div class="max-w-none">
-            <h1 class="mb-5 text-2xl font-bold">{{ slogan | safe }}</h1>
-            <p class="mb-5 text-xl">{{ description | safe }}</p>
+            <h1 class="mb-5 text-2xl font-bold">{{ slogan }}</h1>
+            <p class="mb-5 text-xl">{{ description }}</p>
           </div>
         </div>
       </div>
       <link rel="shortcut icon" href="/favicon.ico"></header>
     <main>
-      {{ content | safe }}
+    {%- for section in collections.section -%}
+      {% include "section.html" %}
+    {%- endfor -%}
     </main>
-    <div class="hero min-h-screen bg-primary relative">
-      <div class="hero-overlay"></div>
-      <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">about</h1>
-          <p class="mb-5 text-3xl">
-            Mytext
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="hero min-h-screen bg-secondary relative">
-      <div class="hero-overlay"></div>
-      <div class="hero-content absolute left-0 ml-7 top-0 mt-5 text-neutral-content">
-        <div class="max-w-md">
-          <h1 class="mb-5 text-5xl font-bold">How and Why</h1>
-          <p class="mb-5 text-3xl">
-            transparent
-          </p>
-        </div>
-      </div>
-    </div>
     <script src="" async="async" defer="defer"></script>
   </body>
 </html>
