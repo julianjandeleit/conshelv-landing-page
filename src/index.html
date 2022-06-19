@@ -20,16 +20,16 @@ content: ""
     <!-- [if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif] -->
-
     <header>
+      {% include "partials/navbar.liquid" %}
       <div
         class="hero min-h-screen relative"
         style="background-image:
           url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
         <div class="hero-overlay bg-opacity-80">
-            {% include "partials/navbar.liquid" %}
+
         </div>
-        <div class="hero-content absolute left-0 ml-24 mr-24 text-neutral-content">
+        <div class="hero-content absolute left-0 ml-24 mr-24 text-neutral-content min-h-fit">
           <div class="max-w-none p-5 rounded-md">
             <h1 class="mb-5 text-5xl md:text-7xl font-bold">{{ slogan }}</h1>
             <p class="mb-5 text-xl md:text-4xl">{{ description }}</p>
