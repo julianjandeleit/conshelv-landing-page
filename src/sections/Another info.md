@@ -1,6 +1,4 @@
 ---
 
 ---
-# Hello! This is anothe
-## r
-info
+content of section "Another info"
