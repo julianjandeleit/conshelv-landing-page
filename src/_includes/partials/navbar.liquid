@@ -8,6 +8,7 @@
         <a href="index.html" class="ml-5 normal-case text-2xl">{{ site.title }}</a>
     </div>
     {%- for section in collections.section -%}
-      <div class="mr-5">{{ section.fileSlug }}</div>
+      <a class="mr-5" href="#{{ section.fileSlug }}">{{ section.data.title }}</a>
     {%- endfor -%}
+    <a href="#cta" class="btn btn-success ml-5">express interst</a>
 </nav>
