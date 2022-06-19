@@ -1,10 +1,9 @@
 ---
 title: "What is a <em>Shelv.</em>"
 ---
-A _Shelv._ is a device for your home, it has the size of a small box.
-At first sight, a _Shelv._ may seem like just another hard-drive to store your data. 
+A _Shelv._ is a device for your home that has the size of a small box. 
 
-However, a _Shelv._ is more. It is:
+It is:
 
 <ul class="list list-disc list-inside">
 
