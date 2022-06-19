@@ -7,4 +7,7 @@
     <div class="flex-1">
         <a href="index.html" class="ml-5 normal-case text-2xl">{{ site.title }}</a>
     </div>
+    {%- for section in collections.section -%}
+      <div class="mr-5">{{ section.fileSlug }}</div>
+    {%- endfor -%}
 </nav>
