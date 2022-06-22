@@ -1,66 +1,37 @@
 ---
-slogan: "The place for pictures"
-description: "Take back control of your photo collection and save all your images on a <b>personal Shelv</b>. It seamlessly integrates with your devices to make handling digital photos as clutter-free as ever! "
-content: ""
+layout: layout/base
+title: Test
+site:
+    title: Conshelv.
+    lang: en
+    cta:
+        text: "get in touch"
+        id: cta
+        desc: "Are you interersted, have questions or comments?<br>Write to"
+        mail: julian.jandeleit@uni-konstanz.de
+slogan: "The shelf for digital images"
+description: "Take back control of your photo collection and save all your images at home on a <b>personal Shelv</b>."
 ---
 
-<!DOCTYPE html data-theme="conshelv">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-  <html>
-    <head> <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/style.css"> </head>
-  <body>
-    <!-- [if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif] -->
-    <header>
-      {% include "partials/navbar.liquid" %}
-      <div
-        class="hero min-h-screen relative"
-        style="background-image:
-          url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
-        <div class="hero-overlay bg-opacity-80">
+<div
+class="hero min-h-screen relative"
+style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
 
-        </div>
-        <div class="hero-content absolute left-0 ml-24 mr-24 text-neutral-content min-h-fit">
-          <div class="max-w-none p-5 rounded-md">
-            <h1 class="mb-5 text-5xl md:text-7xl font-bold">{{ slogan }}</h1>
-            <p class="mb-5 text-xl md:text-4xl">{{ description }}</p>
-          </div>
-        </div>
-      </div>
-      <link rel="shortcut icon" href="/favicon.ico"></header>
-    {%- for section in collections.section -%}
-      <div>{% include "section.html" %}</div>
-    {%- endfor -%}
-    <div id="cta" class="w-full bg-secondary text-neutral" >
-      <div class="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
-        <h1 class="text-5xl antialiased font-semibold leading-none text-center dark:text-gray-100">Get in touch and express interest</h1>
-        <p class="pt-2 pb-8 text-xl antialiased text-center dark:text-gray-100">Find out about product development and other news</p>
-        <div class="flex flex-row">
-          <input type="text" placeholder="example@email.com" class="w-3/5 p-3 rounded-l-lg sm:w-2/3" disabled>
-          <button type="button" class="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-accent text-neutral-content" disabled>Subscribe</button>
-        </div>
-        <p class="pt-2 pb-2 text-xl antialiased text-center dark:text-gray-100 mt-3"> And get in touch directly at:</p>
-        <a class="text-center" href="mailto:info@conshelv.de">info@conshelv.de</a>
-      </div>
+<div class="hero-overlay bg-opacity-50"></div>
+
+<div class="hero-content absolute left-0 ml-24 mr-24 text-neutral-content min-h-fit">
+  <div class="max-w-none p-5 rounded-md">
+    <h1 class="mb-5 text-5xl md:text-7xl font-bold">{{ slogan }}</h1>
+    <p class="mb-5 text-xl md:text-4xl">{{ description }}</p>
+  </div>
+</div>
+
+</div>
+
+<div class="w-full bg-secondary text-secondary-content" >
+    <div class="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
+      <h1 id="{{ site.cta.id }}" class="text-5xl antialiased font-semibold leading-none text-center">{{ site.cta.text }}</h1>
+      <p class="pt-2 pb-8 text-xl antialiased text-center">{{ site.cta.desc }}</p>
+      <a class="p-2 rounded-lg text-center bg-neutral text-neutral-content" href="mailto:{{ site.cta.mail }}">{{ site.cta.mail }}</a>
     </div>
-    </main>
-    <script src="" async="async" defer="defer"></script>
-    <footer class="footer items-center p-4 bg-neutral text-neutral-content">
-      <div class="items-center grid-flow-col">
-        <img class="h-8 w-8" src="/favicon.ico"/> 
-        <p>Copyright © 2022 - All right reserved</p>
-      </div> 
-      <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-     </div>
-    </footer>
-  </body>
-</html>
+</div>

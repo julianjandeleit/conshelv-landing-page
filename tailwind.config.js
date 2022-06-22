@@ -7,6 +7,7 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
+      "wireframe",
       {
         conshelv: {
           "primary": "#84cc16",
