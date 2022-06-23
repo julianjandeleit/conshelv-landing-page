@@ -8,6 +8,10 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addFilter("stripRootDir", function(str) {
         var parts = str.split('/')
+        if (str[0] == '/')
+        {
+            parts.shift() // first element is empty in this case so needs to be stripped as well
+        }
         parts.shift() //removes first element
         return "/"+parts.join("/");
       });
