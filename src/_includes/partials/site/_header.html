@@ -17,7 +17,7 @@
         <label tabindex="0" class="btn btn-ghost rounded-btn">{{ lang }}</label>
         <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
           {% for language in config.languages %}
-            <li><a href="/{{language}}/{{ page.outputPath | stripRootDir | stripRootDir }}">{{ language }}</a></li> 
+            <li><a href="/{{language}}{{ page.outputPath | stripRootDir | stripRootDir }}">{{ language }}</a></li> 
           {% endfor %}
         </ul>
     </div>
