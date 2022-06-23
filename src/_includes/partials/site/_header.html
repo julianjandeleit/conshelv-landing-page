@@ -10,6 +10,17 @@
     <div class="flex-1">
         <a href="index.html" class="ml-5 normal-case text-2xl text-primary-content">{{ site.title }}</a>
     </div>
-    <a href="#{{ site.cta.id }}" class="btn btn-success ml-5 text-success-content">{{ site.cta.text }}</a>
+
+    <a href="#{{ site.cta.id }}" class="btn btn-success ml-5 text-success-content pl-5 pr-5 ml-2 mr-2">{{ site.cta.text }}</a>
+    
+    <div class="ml-2 mr-2 dropdown dropdown-end bg-black bg-opacity-20">
+        <label tabindex="0" class="btn btn-ghost rounded-btn">{{ lang }}</label>
+        <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+          {% for language in config.languages %}
+            <li><a href="/{{language}}/{{ page.outputPath | stripRootDir | stripRootDir }}">{{ language }}</a></li> 
+          {% endfor %}
+        </ul>
+    </div>
+
 </nav>
 </header>

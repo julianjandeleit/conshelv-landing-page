@@ -1,5 +1,0 @@
-# namespace and defaults for all variables used in general site layout structure
-lang: "en"
-title: "Conshelv."
-nav:
-  ctaText: "notify me"
