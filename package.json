@@ -3,7 +3,7 @@
     "tailwind:process": "npx postcss src/style.css --o public/style.css --watch",
     "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
     "serve": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy && npx postcss src/style.css --o public/style.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
