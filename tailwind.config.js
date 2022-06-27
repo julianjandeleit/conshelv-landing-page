@@ -9,7 +9,7 @@ module.exports = {
     themes: [{
       wireframe: {
         ...require("daisyui/src/colors/themes")["[data-theme=wireframe]"],
-        "fontFamily": "Playfair Display", 
+        "fontFamily": "Anek Malayalam", 
       },
       conshelv: {
         "primary": "#84cc16",
