@@ -1,4 +1,5 @@
 # Setup
+ - first use only: npm install
  - npm run start, for live development
  - npm run build, to generate web directory to serve
 
