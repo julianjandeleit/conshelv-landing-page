@@ -17,7 +17,7 @@ module.exports = {
           "success": "#4ebb93",
           "warning": "#FBBD23",
           "error": "#F87272",
-          "fontFamily": "Anek Malayalams",
+          "fontFamily": "Anek Malayalam",
         },}
       /*
        wireframe: {
