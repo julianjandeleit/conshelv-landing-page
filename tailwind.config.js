@@ -7,11 +7,23 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [{
-      wireframe: {
+      conshelv: {
+          "primary": "#7fb52d",
+          "secondary": "#2F2d4b64",
+          "accent": "#d9f99d",
+          "neutral": "#e7e7e4",
+          "base-100": "#ffffff",
+          "info": "#52b5e0",
+          "success": "#4ebb93",
+          "warning": "#FBBD23",
+          "error": "#F87272",
+          "fontFamily": "Anek Malayalams",
+        },}
+      /*
+       wireframe: {
         ...require("daisyui/src/colors/themes")["[data-theme=wireframe]"],
         "fontFamily": "Anek Malayalam", 
-      },
-      conshelv: {
+      conshelv_old: {
         "primary": "#84cc16",
         "secondary": "#2F2d4b64",
         "accent": "#d9f99d",
@@ -21,7 +33,7 @@ module.exports = {
         "success": "#36D399",
         "warning": "#FBBD23",
         "error": "#F87272",
-      },}
+      },*/
     ],
   },
 }
