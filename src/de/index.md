@@ -2,8 +2,8 @@
 layout: layout/index
 site:
     title: Conshelv.
-    slogan: "Ein Schrank für digitale Bilder"
-    short: "Übernehmen Sie die Kontrolle über Ihre Fotosammlung und speichern Sie alle Bilder zu Hause in einem <b>persönlichen Shelv.</b>."
+    slogan: "Conshelv,<br> das Zuhause für Fotos auf allen Geräten"
+    short: "Übernehmen Sie die Kontrolle über Ihre Fotosammlung und speichern Sie alle Bilder lokal in ihrem <b>persönlichen Conshelv Archiv</b>!"
     sections:
       - title: Die Schrank Metapher
         paragraphs: 

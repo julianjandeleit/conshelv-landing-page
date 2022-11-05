@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "tailwind:process": "npx postcss src/style.css --o public/style.css --watch",
-    "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
+    "tailwind:process": "npx postcss src/style.css --o public/style.css",
+    "tailwind:watch": "npx postcss src/style.css --o public/style.css --watch",
+    "start": "concurrently \"npm run tailwind:watch\" \"npm run serve\"",
     "serve": "eleventy --serve",
     "build": "eleventy && npx postcss src/style.css --o public/style.css"
   },

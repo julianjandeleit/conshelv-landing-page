@@ -8,7 +8,7 @@ module.exports = {
   daisyui: {
     themes: [{
       conshelv: {
-          "primary": "#7fb52d",
+          "primary": "#EBE2D3",
           "secondary": "#2F2d4b64",
           "accent": "#d9f99d",
           "neutral": "#e7e7e4",

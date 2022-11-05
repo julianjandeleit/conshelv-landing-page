@@ -1,0 +1,9 @@
+<div class="ml-2 mr-2 dropdown dropdown-end bg-secondary text-secondary-content bg-blend-color rounded-lg">
+    <label tabindex="0" class="btn btn-ghost rounded-btn"><i data-feather="globe"></i></label>
+     
+    <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-secondary rounded-box w-52 mt-4">
+      {% for language in config.languages %}
+        <li class="bg-secondary"><a href="/{{language}}{{ page.outputPath | stripRootDir | stripRootDir }}">{{ language }}</a></li> 
+      {% endfor %}
+    </ul>
+</div>

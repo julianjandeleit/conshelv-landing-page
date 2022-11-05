@@ -1,5 +1,5 @@
 <header>
-<nav class="navbar z-10 bg-primary sticky top-0">
+<nav class="navbar z-10 sticky top-0">
     <div class="flex-none">
         <a href="index.html">
             <div class="p-2 rounded-md  bg-primary">
@@ -13,8 +13,9 @@
 
     <a href="{{ site.cta.href }}" class="hidden md:flex btn btn-secondary ml-5 text-secondary-content pl-5 pr-5 ml-2 mr-2">{{ site.cta.text }}</a>
     
-    <div class="ml-2 mr-2 dropdown dropdown-end bg-secondary text-secondary-content">
-        <label tabindex="0" class="btn btn-ghost rounded-btn">{{ lang }}</label>
+    <div class="ml-2 mr-2 dropdown dropdown-end bg-secondary text-secondary-content bg-blend-color">
+        <label tabindex="0" class="btn btn-ghost rounded-btn"><i data-feather="globe"></i></label>
+         
         <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-secondary rounded-box w-52 mt-4">
           {% for language in config.languages %}
             <li class="bg-secondary"><a href="/{{language}}{{ page.outputPath | stripRootDir | stripRootDir }}">{{ language }}</a></li> 
