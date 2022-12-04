@@ -1,4 +1,4 @@
-<footer class="footer columns-3 items-center p-4 bg-neutral text-neutral-content w-fill relative items-center">
+<footer class="footer columns-3 items-center p-4 bg-neutral text-neutral-content w-fill relative items-center ">
     <div class="items-center grid-flow-col">
       <img class="h-8 w-8" src="/assets/favicon.ico"/> <p>Copyright © 2022 &middot; All rights reserved</p>
     </div> 
@@ -12,7 +12,7 @@
         <a href="https://github.com/feathericons/feather" title="webpage icons">Icons by open source contributers from feather-icons</a>
         <br>
         {% for section in site.sections %}
-          <a href="{{section.img}}" class="text-gray-700 text-base mb-4 text-xl">Subsection {{ forloop.index }}: {{ section.img_attrib }}</a><br>
+        Subsection {{ forloop.index }}: {{ section.img_attrib }}<br>
         {% endfor  %}
       </div>
     </div>
