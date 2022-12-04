@@ -2,14 +2,27 @@
 layout: layout/index
 site:
     title: Conshelv.
-    slogan: "Conshelv,<br> das Zuhause für Fotos auf allen Geräten"
-    short: "Übernehmen Sie die Kontrolle über Ihre Fotosammlung und speichern Sie alle Bilder lokal in ihrem <b>persönlichen Conshelv Archiv</b>!"
+    slogan: "Die Cloud für Zuhause, die das Verwalten von Bildern aktiv unterstützt."
+    short: "Mit einem <b>Conshelv Archiv</b> können Sie Ihre Bilder lokal auf einem eigenen Gerät verwalten und gleichzeitig über das Internet sicher auf Ihre Sammlung zugreifen."
+    sections_header: "Diese Vorteile bietet Conshelv"
     sections:
-      - title: Die Schrank Metapher
+      - title: Conshelv unterstützt beim Ordnen von Fotos
+        img: https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
         paragraphs: 
-         - <b>Physische Gegenstände</b> werden normalerweise in einem Schrank oder Regal aufbewahrt. Wenn man einen Gegenstand benötigt, geht man zu dem Schrank, schaut nach dem Gegenstand und nimmt ihn heraus. Nach Benutzung wird er in den Schrank zurück gestellt damit er dort wiedergefunden werden kann. Der Schrank hat also eine Lagerungs-, Ordnungs- und Bereitstellungsfunktion. 
-         - Für <b>digitale Objekte</b> und insbesondere Fotos gibt es keine Lösung die alle drei Funktionen auf einmal zufriedenstellend erfüllt. Auf Fotos die auf einem PC gespeichert sind, kann nur über den Computer selbst zugegriffen werden. Festplatten müssen als Ganzes mitgenommen und eingesteckt werden. Präsentiert werden die Bilder dann im Dateisystem. Eine solche Schnittstelle entspricht nicht dem mentalen Modell für das Ablegen von Fotos, da ein Bild auf verschiedene Arten gruppiert werden kann. Diese sind nicht hierarchisch und so in einem solchen Dateisystem nicht darstellbar. Das selbe Problem haben auch Cloud-Anbieter, die ein Dateisystem als Oberfläche bereitstellen. Zusätzlich ist der Lagerort bei einer Cloud weder klar bestimmt noch sind die Bilder vor Ort im Haus gespeichert. Des Weiteren haben in der heutigen vernetzten Welt die Meisten mehrere Geräte. Wenn eine intuitive Ablage und Bereitstellung von Bildern erwünscht sind, ist es mit herkömmlichen Methoden nahezu unmöglich, eine Fotosammlung auf jedem Gerät zugänglich und geordnet zu halten.
-         - <b>Shelv.</b> ist wie ein Schrank für digitale Bilder. Mit minimaler Einrichtung kann sich der Besitzer eines Shelv. mit dessen intuitiver Benutzeroberfläche verbinden. Beim Ablegen von Bildern in das Gerät werden typische Attribute wie Datum, Kamera und Fotograf aus dem Bild extrahiert. Zusätzliche Kategorisierungen wie das Erstellen von Alben und benutzerdefinierten Tags werden ebenfalls unterstützt. Anhand dieser Informationen können die Bilder in einem Shelv. schnell gefunden und auf ein lokales Gerät übertragen werden. Während die Benutzeroberfläche aktuell im Web bereitgestellt wird, sollen zusätzlich native Integration als Apps sowie gängige File-Sharing-Protokolle unterstützt werden um Bilder noch einfacher bereit zu stellen.
+         - Verlieren auch Sie den Überblick über Ihre Fotos? 
+         - Kein Wunder, wenn man alle paar Tage ein Bild macht, wird das Verwalten sehr aufwändig!
+         - Conshelv begleitet die Reise Ihrer Bilder vom Zeitpunkt der Aufnahme an und fügt sie automatisch in Ihre Sammlung hinzu. Dabei können relevante Attribute automatisch extrahiert und vorgeschlagen werden. Nach diesen lässt sich dann kinderleicht filtern. Das passiert alles auf Ihrem Gerät, sodass Sie die volle Kontrolle über Ihre Bilder behalten. Durcheinander wird vermieden, indem Sie selbst bestimmen, welche Attribute Ihnen wichtig sind.
+      - title: Conshelv unterstützt Fernzugriff von anderen Geräten
+        img: https://images.unsplash.com/photo-1495564103921-67412af57da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80
+        paragraphs: 
+         - Heutzutage hat jeder mehrere Geräte. Natürlich möchten Sie von jedem Gerät auf ihre Fotos zugreifen...
+         - Conshelv stellt Bilder, die sie freigeben, privat in Ihrem Netzwerk zu verfügung, sodass Sie Ihre Bilder immer bei sich haben! Sie können die Fotos über den Browser verwalten und herunterladen, oder nativ in das Dateisystem Ihres Gerätes einbinden.
+      - title: Conshelv speichert Bilder lokal auf Ihrem Gerät
+        img: https://images.unsplash.com/photo-1518166203834-edc1ce602394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
+        paragraphs: 
+         - Möchten Sie etwas so persönliches wie Fotos den Servern datenhungriger Cloud-Anbieter anvertrauen? Mit Conshelv bekommen Sie die Kontrolle über Ihre Fotos zurück!
+         - Alle Bilder werden lokal auf Ihrem eigenen Gerät gespeichert und verwaltet. Sie können die Daten jederzeit aus dem Archiv entnehmen und klassisch im Dateisystem anschauen, ohne ihre Sortierung zu verlieren. Das heißt Sie können unser Archiv nutzen um Ihre Fotos langfristig zu speichern. Denn Sie wissen, dass Sie die Bilder jederzeit auch wieder raus bekommen.  
+         - Weil Conshelv in Ihr Netzwerk integriert ist, bekommen Sie die Datenschutz-Features, ganz ohne auf die Vorteile einer herkömmlichen Cloud verzichten zu müssen!
     cta:
       text: "Jetzt ausprobieren"
       desc: "Unverbindlich und kostenlos Anmelden"

@@ -25,21 +25,34 @@ style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8b
 </div>
 </div>
 
-<div class="pb-5 bg-primary text-primary-content flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10 md:pb-5">
-  <h2 class="text-5xl antialiased font-semibold leading-none text-center p-2">{{ site.sections[0].title }}</h2>
-  <div class="text-xl text-justify">
-    {% for par in site.sections[0].paragraphs %}
-      <p>{{ par }}</p>
-      <br>
-    {% endfor  %}
+<!-- MAIN SECTIONS -->
 
-   
+<div class="pb-5 bg-primary text-primary-content content-center p-4 py-20 mx-auto md:p-10 md:pb-5">
+
+<h1 id="{{ site.cta.id }}" class="text-5xl antialiased font-semibold leading-none text-center">{{ site.sections_header }}</h1>
+<div class="flex flex-row flex-wrap content-center justify-around">
+{% for section in site.sections %}
+<div class="flex justify-center p-16 grow-0 shrink">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+    <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="{{section.img}}" alt="" />
+    <div class="p-8 flex flex-col justify-between">
+      <div class="flex-auto">
+      <h5 class="text-gray-900 text-3xl font-bold mb-2">{{ section.title }}</h5>
+      {% for par in section.paragraphs %}
+      <p class="text-gray-700 text-base mb-4 text-xl">{{ par }}</p>
+      {% endfor  %}
+      <p>
+      </div>
+      <a href="{{ site.cta.href }}"><button type="button" class="btn btn-secondary">{{ site.cta.text }}</button></a>
+      </p>
+    </div>
   </div>
-  <a href="{{ site.cta.href }}" class="text-xl p-3 rounded-lg antialiased leading-none text-center bg-secondary text-secondary-content border-2 border-transparent hover:bg-neutral hover:text-neutral-content hover:border-secondary">
-  {{ site.cta.text }}
-  </a>
+</div>
+{% endfor %}
 
 </div>
+</div>
+<!-- CONTACT SECTION -->
 
 <div class="custom-shape-divider-bottom-1667649049 ">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
