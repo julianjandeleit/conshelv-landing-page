@@ -7,16 +7,8 @@ style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8b
 <div class="hero-overlay bg-opacity-50 rounded-b-7"></div>
 
 
-<div class="absolute top-0 left-0 p-7"><div class="text-4xl font-bold font-italic ml-2 mr-2 bg-secondary text-secondary-content bg-blend-color rounded-lg btn btn-ghost rounded-btn""> <a href="/">{{ site.title }} </a></div></div>
+<div class="absolute top-0 left-0 p-7"><div class="text-4xl font-bold font-italic ml-2 mr-2 bg-secondary text-secondary-content bg-blend-color rounded-lg btn btn-ghost""> <a href="/">{{ site.title }} </a></div></div>
 <div class="absolute top-0 right-0"><div class="p-7">{% include "partials/components/language-selector.html" %}</div>
-</div>
-
-<div class="hero-content absolute text-neutral-content min-h-fit p-8">
-  <div class="max-w-none p-5 rounded-md">
-    <h1 class="font-manrope text-5xl font-extrabold my-8 py-4 text-center max-md:text-3xl">{{ site.slogan }}</h1>
-    <p class="font-manrope text-4xl font-[450] text-justify tracking-tight max-md:text-2xl">{{ site.short }}</p>
-    <div class="mt-8 text-center"><a href="{{ site.cta.href }}"><button type="button" class="btn btn-secondary text-xl px-24 max-md:text-md max-md:px-0 max-md:w-full">{{ site.cta.text }}</button></a></div>
-  </div>
 </div>
 
 <div class="custom-shape-divider-bottom-1667647108">
@@ -25,6 +17,14 @@ style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8b
       <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
       <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
   </svg>
+</div>
+
+<div class="hero-content absolute text-neutral-content min-h-fit p-8">
+  <div class="max-w-none p-5 rounded-md">
+    <h1 class="font-manrope text-5xl font-extrabold my-8 py-4 text-center max-md:text-3xl max-md:my-2">{{ site.slogan }}</h1>
+    <p class="font-manrope text-4xl font-[450] text-justify tracking-tight max-md:text-2xl">{{ site.short }}</p>
+    <div class="mt-8 max-md:mt-2 text-center"><a href="{{ site.cta.href }}"><button type="button" class="btn btn-secondary text-xl px-24 max-md:text-md max-md:px-0 max-md:w-full">{{ site.cta.text }}</button></a></div>
+  </div>
 </div>
 </div>
 

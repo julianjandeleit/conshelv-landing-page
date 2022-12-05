@@ -6,7 +6,7 @@ site:
     short: "Mit einem <b>Conshelv Archiv</b> können Sie Ihre Bilder lokal auf einem eigenen Gerät verwalten und gleichzeitig über das Internet sicher auf Ihre Sammlung zugreifen."
     sections_header: "Diese Vorteile bietet Conshelv"
     sections:
-      - title: Conshelv unterstützt beim Ordnen von Fotos
+      - title: Conshelv unterstützt beim Ordnen Ihrer Fotos
         img: https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/s/photos/photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs: 
@@ -19,9 +19,9 @@ site:
         img: https://images.unsplash.com/photo-1495564103921-67412af57da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@anckor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julian O'hayon</a> on <a href="https://unsplash.com/s/photos/digital-devices?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs: 
-         - Heutzutage hat jeder mehrere Geräte. Natürlich möchten Sie von jedem Gerät auf Ihre Fotos zugreifen.
+         - Heutzutage hat Jeder mehrere Geräte. Natürlich möchten Sie von jedem Gerät auf Ihre Fotos zugreifen.
          - Conshelv stellt freigegebene Bilder privat in Ihrem Netzwerk zu verfügung, so dass Sie jederzeit Zugriff darauf haben! 
-         - Sie können die Fotos über den Browser verwalten, herunterladen oder sie direkt in Ihr System einbinden.
+         - Sie können die Fotos über den Browser verwalten, herunterladen oder sie direkt in Ihr System einbinden. Manuelles Kopieren von Dateien wird so überflüssig.
          - Das passiert alles auf Ihrem eigenen Gerät, sodass Sie die volle Kontrolle über Ihre Bilder behalten.
       - title: Conshelv speichert Bilder lokal auf Ihrem Gerät
         img: https://images.unsplash.com/photo-1518166203834-edc1ce602394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
