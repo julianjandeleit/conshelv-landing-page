@@ -1,9 +1,9 @@
 ---
 layout: layout/index
 site:
-    title: Conshelv
     slogan: "Die private Cloud für Zuhause<br>und smarte Hilfe für Deine Bildverwaltung"
     short: "Mit einem <b>Conshelv Archiv</b> können Sie Ihre Bilder lokal auf einem eigenen Gerät verwalten und gleichzeitig über das Internet sicher auf Ihre Sammlung zugreifen."
+    hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "Diese Vorteile bietet Conshelv"
     sections:
       - title: Conshelv unterstützt beim Ordnen Ihrer Fotos
@@ -41,5 +41,5 @@ site:
       text: "Kontakt Aufnehmen"
       id: contact
       desc: "Sind Sie interessiert, haben Sie Fragen oder Kommentare?<br>Schreiben Sie an"
-      mail: julian.jandeleit@uni-konstanz.de
+      mail: info@conshelv.com
 ---

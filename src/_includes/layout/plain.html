@@ -1,0 +1,32 @@
+---
+layout: layout/base
+---
+
+<div class="pb-5 bg-primary text-primary-content content-center p-4 py-16 mx-auto md:p-10 md:pb-5">
+    <div class="absolute top-0 left-0 p-7"><div class="text-4xl font-bold font-italic ml-2 mr-2 bg-secondary text-secondary-content bg-blend-color rounded-lg btn btn-ghost"> <a href="/" class="no-underline">{{ config.title }} </a></div></div>
+    <div class="absolute top-0 right-0"><div class="p-7">{% include "partials/components/language-selector.html" %}</div></div>
+    <div class="mt-16"><p>&nbsp;</p></div>
+    {{ content }}
+</div>
+
+<style>
+    /* Partially reimplement Default styles stripped by tailwind */
+    
+    h1 {
+        display: block;
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+      }
+    
+    p {
+          display: block;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          margin-left: 0;
+          margin-right: 0;
+        }    
+</style>

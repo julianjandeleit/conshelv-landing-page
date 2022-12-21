@@ -6,10 +6,8 @@ class="hero min-h-screen relative"
 style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
 <div class="hero-overlay bg-opacity-50 rounded-b-7"></div>
 
-
-<div class="absolute top-0 left-0 p-7"><div class="text-4xl font-bold font-italic ml-2 mr-2 bg-secondary text-secondary-content bg-blend-color rounded-lg btn btn-ghost""> <a href="/">{{ site.title }} </a></div></div>
-<div class="absolute top-0 right-0"><div class="p-7">{% include "partials/components/language-selector.html" %}</div>
-</div>
+<div class="absolute top-0 left-0 p-7"><div class="text-4xl font-bold font-italic ml-2 mr-2 bg-secondary text-secondary-content bg-blend-color rounded-lg btn btn-ghost"> <a href="/">{{ config.title }} </a></div></div>
+<div class="absolute top-0 right-0"><div class="p-7">{% include "partials/components/language-selector.html" %}</div></div>
 
 <div class="custom-shape-divider-bottom-1667647108">
   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -21,8 +19,8 @@ style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8b
 
 <div class="hero-content absolute text-neutral-content min-h-fit p-8">
   <div class="max-w-none p-5 rounded-md">
-    <h1 class="font-manrope text-5xl font-extrabold my-8 py-4 text-center max-md:text-3xl max-md:my-2">{{ site.slogan }}</h1>
-    <p class="font-manrope text-4xl font-[450] text-justify tracking-tight max-md:text-2xl">{{ site.short }}</p>
+    <h1 class="font-manrope text-4xl font-extrabold my-8 py-4 text-center max-md:text-base max-md:my-2">{{ site.slogan }}</h1>
+    <p class="font-manrope text-4xl font-[450] text-justify tracking-tight max-md:text-sm">{{ site.short }}</p>
     <div class="mt-8 max-md:mt-2 text-center"><a href="{{ site.cta.href }}"><button type="button" class="btn btn-secondary text-xl px-24 max-md:text-md max-md:px-0 max-md:w-full">{{ site.cta.text }}</button></a></div>
   </div>
 </div>
