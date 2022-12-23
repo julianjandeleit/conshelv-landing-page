@@ -4,10 +4,10 @@ layout: layout/base
 <div
 class="hero min-h-screen relative"
 style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
-<div class="hero-overlay bg-opacity-50 rounded-b-7"></div>
-
-<div class="absolute top-0 left-0 p-7"><div class="text-4xl font-bold font-italic ml-2 mr-2 bg-secondary text-secondary-content bg-blend-color rounded-lg btn btn-ghost"> <a href="/">{{ config.title }} </a></div></div>
-<div class="absolute top-0 right-0"><div class="p-7">{% include "partials/components/language-selector.html" %}</div></div>
+<div class="hero-overlay bg-primary bg-opacity-40 rounded-b-7"></div>
+<div class="absolute top-0 left-0 right-0 w-full">
+{% include "partials/components/header.html" %}
+</div>
 
 <div class="custom-shape-divider-bottom-1667647108">
   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -17,34 +17,34 @@ style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8b
   </svg>
 </div>
 
-<div class="hero-content absolute text-neutral-content min-h-fit p-8">
+<div class="hero-content absolute text-neutral min-h-fit p-8">
   <div class="max-w-none p-5 rounded-md">
     <h1 class="font-manrope text-4xl font-extrabold my-8 py-4 text-center max-md:text-2xl max-md:my-2">{{ site.slogan }}</h1>
     <p class="font-manrope text-4xl font-[450] text-justify tracking-tight max-md:text-xl">{{ site.short }}</p>
-    <div class="mt-8 max-md:mt-4 text-center"><a href="{{ site.cta.href }}"><button type="button" class="btn btn-secondary text-xl px-24 max-md:text-lg max-md:px-0 max-md:w-full">{{ site.cta.text }}</button></a></div>
+    <div class="mt-8 max-md:mt-4 text-center"><a href="{{ site.cta.href }}"><button type="button" class="btn btn-accent text-accent-content text-xl px-24 max-md:text-lg max-md:px-0 max-md:w-full">{{ site.cta.text }}</button></a></div>
   </div>
 </div>
 </div>
 
 <!-- MAIN SECTIONS -->
 
-<div class="pb-5 bg-primary text-primary-content content-center p-4 py-16 mx-auto md:p-10 md:pb-5">
+<div class="pb-5 bg-neutral text-neutral-content content-center p-4 py-16 mx-auto md:p-10 md:pb-5">
 
 <h1 id="{{ site.cta.id }}" class="text-5xl antialiased font-semibold leading-none text-center mb-6">{{ site.sections_header }}</h1>
 <div class="flex flex-row flex-wrap content-center justify-around">
 {% for section in site.sections %}
 <div class="flex justify-center p-8 my-4 grow-0 shrink max-md:p-2">
-  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-base-100 shadow-lg">
     <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="{{section.img}}" alt="" />
     <div class="p-8 flex flex-col justify-between">
-      <div class="flex-auto text-justify tracking-tight">
+      <div class="flex-auto text-justify tracking-tight flex-wrap">
       <h5 class="text-gray-900 text-2xl font-bold mb-2 text-left">{{ section.title }}</h5>
       {% for par in section.paragraphs %}
       <p class="text-gray-700 text-base mb-4 text-xl">{{ par }}</p>
       {% endfor  %}
       <p>
       </div>
-      <a class="" href="{{ site.cta.href }}"><div class="btn btn-secondary w-[100%]">{{ site.cta.text }}</div></a>
+      <a class="" href="{{ site.cta.href }}"><div class="btn btn-accent w-[100%]">{{ site.cta.text }}</div></a>
       </p>
     </div>
   </div>
@@ -63,11 +63,11 @@ style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8b
     </svg>
 </div>
 
-<div class="w-full bg-secondary text-secondary-content" >
+<div class="w-full bg-accent text-base-100" >
   
   <div class="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
       <h1 id="{{ site.cta.id }}" class="text-5xl antialiased font-semibold leading-none text-center">{{ site.contact.text }}</h1>
       <p class="pt-2 pb-8 text-xl antialiased text-center">{{ site.contact.desc }}</p>
-      <a class="p-2 rounded-lg text-center text-secondary-content border-solid border-2 border-secondary-content hover:bg-neutral hover:text-neutral-content hover:border-neutral" href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a>
+      <a class="p-2 rounded-lg text-center text-base-100 border-solid border-2 border-base-100 hover:bg-base-100 hover:text-accent hover:border-base-100" href="mailto:{{ site.contact.mail }}">{{ site.contact.mail }}</a>
     </div>
 </div>
