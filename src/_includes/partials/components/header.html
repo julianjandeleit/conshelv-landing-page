@@ -1,6 +1,6 @@
-<div class="font-baskerville flex flex-row max-md:flex-col justify-between items-center p-4">
-<!-- Title --><a class="text-accent-content btn-ghost p-4 text-4xl italic rounded-md" href="/">{{ config.title }} </a>
-<!-- Language Selector --><label tabindex="0" class="text-accent-content btn-ghost p-4 italic dropdown dropdown-end cursor-pointer rounded-md"><i class="material-icons inline-block text-4xl">language </i><ul tabindex="0" class="menu dropdown-content p-5 shadow bg-accent rounded-box w-52">
+<div class="font-baskerville flex flex-row justify-between items-center p-4">
+<!-- Title --><a class="text-accent-content btn-ghost p-4 text-4xl max-md:text-lg italic rounded-md" href="/">{{ config.title }} </a>
+<!-- Language Selector --><label tabindex="0" class="text-accent-content btn-ghost p-4 italic dropdown dropdown-end cursor-pointer rounded-md"><i class="material-icons inline-block text-4xl max-md:text-lg">language </i><ul tabindex="0" class="menu dropdown-content p-5 shadow bg-accent rounded-box w-52">
       {% for language in config.languages %}
       <li class="bg-accent"><a href="/{{language}}{{ page.outputPath | stripRootDir | stripRootDir }}">{{ language }}</a></li> 
     {% endfor %}

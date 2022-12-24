@@ -1,8 +1,8 @@
 ---
 layout: layout/index
 site:
-    slogan: "Die private Cloud für Zuhause<br>und smarte Hilfe für Deine Bildverwaltung"
-    short: "Mit einem <b>Conshelv Archiv</b> können Sie Ihre Bilder lokal auf einem eigenen Gerät verwalten und gleichzeitig über das Internet sicher auf Ihre Sammlung zugreifen."
+    slogan: "Der Assistent für die Ordnerstruktur deiner Photos"
+    short: "Das <b>Conshelv Archiv</b> sammelt Bilder von all Ihren Geräten und unterstüzt automatisch beim Einpflegen in Ihre Ordnerstruktur. So können Sie ohne Aufwand all Ihre Bilder langfristig an einem Ort sichern und wiederfinden."
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "Diese Vorteile bietet Conshelv"
     sections:
@@ -40,6 +40,6 @@ site:
     contact:
       text: "Kontakt Aufnehmen"
       id: contact
-      desc: "Sind Sie interessiert, haben Sie Fragen oder Kommentare?<br>Schreiben Sie an"
+      desc: "Sind Sie interessiert, haben Sie Fragen oder Vorschläge?<br>Schreiben Sie an"
       mail: info@conshelv.com
 ---
