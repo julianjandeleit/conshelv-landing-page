@@ -1,9 +1,6 @@
 ---
 layout: layout/base
 ---
-<div class="absolute top-0 left-0 right-0 w-full">
-  {% include "partials/components/header.html" %}
-</div>
 <div class="hero min-h-screen relative" style="background-image: url(https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200);">
   <div class="hero-overlay bg-primary bg-opacity-60"></div>
   <div class="custom-shape-divider-bottom-1667647108 absolute bottom-0">
@@ -20,7 +17,9 @@ layout: layout/base
       <div class="mt-8 max-md:mt-4 text-center"><a href="{{ site.cta.href }}"><button type="button" class="btn btn-accent btn-block text-accent-content text-xl px-24 max-md:text-lg max-md:px-0 max-md:w-full">{{ site.cta.text }}</button></a></div>
     </div>
   </div>
-
+  <div class="absolute top-0 left-0 right-0 w-full">
+    {% include "partials/components/header.html" %}
+  </div>
 </div>
 
 <!-- MAIN SECTIONS -->
