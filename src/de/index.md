@@ -2,7 +2,7 @@
 layout: layout/index
 site:
     slogan: "Der Assistent für die Ordnerstruktur deiner Photos"
-    short: "Das <b>Conshelv Archiv</b> sammelt Bilder von all Ihren Geräten und unterstüzt automatisch beim Einpflegen in Ihre Ordnerstruktur. So können Sie ohne Aufwand all Ihre Bilder langfristig an einem Ort sichern und wiederfinden."
+    short: "Das <b>Conshelv Archiv</b> sammelt Bilder von all Ihren Geräten und unterstüzt automatisch beim Einpflegen in Ihre Ordnerstruktur. So können Sie ohne Aufwand all Ihre Bilder langfristig an einem Ort sichern, wiederfinden und zu Verfügung stellen."
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "Diese Vorteile bietet Conshelv"
     sections:
