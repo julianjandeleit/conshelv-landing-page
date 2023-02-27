@@ -1,5 +1,6 @@
 {
 	"name": "conshelv-landing-page-eleventy",
+	"type": "commonjs",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "astro dev",
