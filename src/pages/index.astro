@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+import Hero from '../components/Hero.astro'
+import Divider from '../components/Divider.astro';
+import FeatureSection from '../components/FeatureSection.astro';
+import Contact from '../components/Contact.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+// @ts-expect-error
+import { site } from "../data.yaml";
+---
+
+<Layout title={site.slogan}>
+	<main>
+		<!--<Hero title={site.slogan} short={site.short} cta_text={site.cta.text}>-->
+		<Hero title="Conshelv<br><br>Umfassende Foto-Management-Software für Freizeitfotografen" short="unabhängig von der Wahl Ihres Bildbearbeitungsprogrammes" cta_text="Jetzt Ausprobieren" cta_href={site.cta.href}>
+			<Navigation slot="top" links={[{text: "Features", href: "#features"},{text: "Contact", href: "#contact"}]}/>
+			<Divider slot="bottom" fill="fill-neutral" background="bg-transparent" />			
+		</Hero>
+		<FeatureSection />		
+		<Divider fill="fill-accent" background="bg-neutral" />
+		<Contact/>
+	</main>
+</Layout>
