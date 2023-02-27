@@ -1,5 +1,6 @@
 {
-	"name": "magenta-mass",
+	"name": "conshelv-landing-page-eleventy",
+	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "astro dev",
