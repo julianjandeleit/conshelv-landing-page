@@ -11,11 +11,11 @@ import Navigation from '../components/Navigation.astro';
 import { site } from "../data.yaml";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={site.slogan}>
 	<main>
 		<!--<Hero title={site.slogan} short={site.short} cta_text={site.cta.text}>-->
 		<Hero title="Conshelv<br><br>Umfassende Foto-Management-Software für Freizeitfotografen" short="unabhängig von der Wahl Ihres Bildbearbeitungsprogrammes" cta_text="Jetzt Ausprobieren">
-			<Navigation slot="top"/>
+			<Navigation slot="top" links={[{text: "Features", href: "#features"},{text: "Contact", href: "#contact"}]}/>
 			<Divider slot="bottom" fill="fill-neutral" background="bg-transparent" />			
 		</Hero>
 		<FeatureSection />
