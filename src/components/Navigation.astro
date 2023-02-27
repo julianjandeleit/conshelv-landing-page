@@ -1,0 +1,35 @@
+---
+// @ts-expect-error
+import { site } from "../data.yaml";
+import svgReference from '/favicon.svg'; 
+
+interface Link {
+	text: string;
+	href: string;
+};
+interface Props {
+	icon?: string;
+	links?: Link[];
+};
+const { icon = svgReference , links = [] } = Astro.props;
+---
+<!--DERIVED FROM MAMBA UI -->
+<nav class="p-4 dark:bg-gray-800 dark:text-gray-100 w-full">
+	<div class="container flex justify-between h-16 mx-auto">
+		<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+			<object class="w-full h-full" data={icon} type="image/svg+xml" />
+		</a>
+		<ul class="items-stretch hidden space-x-3 md:flex">
+			<li class="flex">
+				{links.map(({text, href}) => (
+					<a rel="noopener noreferrer" href={href} class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent" set:html={text}></a>
+				))}
+			</li>
+		</ul>
+		<button class="flex justify-end p-4 md:hidden text-primary-content">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+			</svg>
+		</button>
+	</div>
+</nav>
