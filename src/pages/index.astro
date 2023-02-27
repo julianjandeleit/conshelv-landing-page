@@ -15,17 +15,12 @@ import { site } from "../data.yaml";
 <Layout title={site.slogan}>
 	<main>
 		<!--<Hero title={site.slogan} short={site.short} cta_text={site.cta.text}>-->
-		<Hero title="Conshelv<br><br>Umfassende Foto-Management-Software für Freizeitfotografen" short="unabhängig von der Wahl Ihres Bildbearbeitungsprogrammes" cta_text="Jetzt Ausprobieren">
+		<Hero title="Conshelv<br><br>Umfassende Foto-Management-Software für Freizeitfotografen" short="unabhängig von der Wahl Ihres Bildbearbeitungsprogrammes" cta_text="Jetzt Ausprobieren" cta_href={site.cta.href}>
 			<Navigation slot="top" links={[{text: "Features", href: "#features"},{text: "Contact", href: "#contact"}]}/>
 			<Divider slot="bottom" fill="fill-neutral" background="bg-transparent" />			
 		</Hero>
-		<FeatureSection />
-		
+		<FeatureSection />		
 		<Divider fill="fill-accent" background="bg-neutral" />
 		<Contact/>
-		<Footer imgs={
-		// @ts-expect-error
-		site.sections.map((section,index) => ({label:"Section "+(index+1),attrib: section.img_attrib}))
-		}/>
 	</main>
 </Layout>

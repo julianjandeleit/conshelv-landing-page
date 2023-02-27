@@ -5,6 +5,9 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+// @ts-expect-error
+import { site } from "../data.yaml";
+import Footer from "../components/Footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -18,8 +21,13 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<Footer imgs={
+			// @ts-expect-error
+			site.sections.map((section,index) => ({label:"Section "+(index+1),attrib: section.img_attrib}))
+			}/>
 	</body>
-</html>
+
+	</html>
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
