@@ -22,7 +22,7 @@ const { sections = site.sections as Section[], cta = site.cta as Cta} = Astro.pr
 ---
 
 <div
-  class="pb-5 bg-neutral text-neutral-content content-center p-4 py-16 mx-auto md:p-10 md:pb-5"
+  class="pb-5 bg-neutral text-neutral-content content-center py-16 mx-auto md:p-10 md:pb-5"
 >
 <a href="#features"><h1
     id="features" 
@@ -30,10 +30,10 @@ const { sections = site.sections as Section[], cta = site.cta as Cta} = Astro.pr
   >
     {site.sections_header}
   </h1></a>
-  <div class="flex flex-row flex-wrap content-center justify-around">
+  <div class="flex flex-row flex-wrap content-center justify-center xl:px-48 lg:mb-12 lg:mt-24">
     {
       sections.map(({ title, img, paragraphs }) => (
-        <div class="flex justify-center p-8 my-4 grow-0 shrink max-md:p-2">
+        <div class="flex justify-center p-8 my-0 max-md:p-2 md:basis-1/2 grow">
           <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-base-100 shadow-lg">
             <img
               class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
@@ -46,7 +46,7 @@ const { sections = site.sections as Section[], cta = site.cta as Cta} = Astro.pr
                   {title}
                 </h5>
                 {paragraphs.map((par) => (
-                  <p class="text-gray-700 text-base mb-4">{par}</p>
+                  <p class="text-gray-700 text-base mb-8">{par}</p>
                 ))}
                 
               </div>
