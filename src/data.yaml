@@ -2,7 +2,7 @@ site:
     slogan: "Umfassende Foto-Management-Software für Freizeitfotografen"
     short: "Das <b>Conshelv Archiv</b> sammelt Bilder von all Ihren Geräten und unterstüzt automatisch beim Einpflegen in Ihre Ordnerstruktur. So können Sie ohne Aufwand all Ihre Bilder langfristig an einem Ort sichern, wiederfinden und zu Verfügung stellen."
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
-    sections_header: "Diese Vorteile bietet Conshelv:"
+    sections_header: "Diese Vorteile bietet Conshelv"
     sections:
       - title: Eigenständige Photo-Management-Software
         img: https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
