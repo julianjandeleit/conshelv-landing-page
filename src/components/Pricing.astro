@@ -15,7 +15,7 @@ interface Props {
 }
 
 const features_basic = ["Eigenständige Fotoverwaltung", "Attribute", "Smarte Alben", "Kamera-Workflows"]
-const features_comfort = features_basic.concat(["Selbst-Erstellbare Attributte", "Versionierung", "Datei-Übertragung", "Integration ins Dateisystem", "Integration von bis zu 4 Kameras"])
+const features_comfort = features_basic.concat(["Selbst-Erstellbare Attributte", "Versionsverwaltung", "Datei-Übertragung", "Integration ins Dateisystem", "Integration von bis zu 4 Kameras"])
 const defaultOptions = [
   {name:"Essential",price:"9,99€",features: features_basic.concat("Integration einer Kamera")},
   {name:"Comfort",price:"14,99€",features: features_comfort},
@@ -26,7 +26,7 @@ const {options = defaultOptions as PricingOption[], cta = "Kaufen"} = Astro.prop
 <div class="bg-neutral pb-24">
 <a href="#pricing"><h1
   id="pricing" 
-  class="text-5xl antialiased font-semibold leading-none text-center mb-14"
+  class="text-4xl antialiased font-semibold leading-none text-center mb-14"
 >
 Preise
 </h1></a>
@@ -50,7 +50,7 @@ Preise
 
         <a href={site.cta.href}
         
-          class={`inline-block px-6 py-2.5 ${index != 1? 'text-accent bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12]' : 'bg-accent text-base-100 hover:bg-accent-focus focus:bg-accent-focus'} font-medium text-xs leading-tight uppercase rounded transition duration-150 ease-in-out w-full`}
+          class={`inline-block px-6 py-2.5 ${index != 1? 'text-accent bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12]' : 'text-accent bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12] lg:bg-accent lg:text-base-100 lg:hover:bg-accent-focus lg:focus:bg-accent-focus'} font-medium text-xs leading-tight uppercase rounded transition duration-150 ease-in-out w-full`}
          data-mdb-ripple="true" data-ripple-color="primary">
           {cta}
         </a>
