@@ -19,7 +19,7 @@ const features_comfort = features_basic.concat(["Selbst-Erstellbare Attributte",
 const defaultOptions = [
   {name:"Essential",price:"9,99€",features: features_basic.concat("Integration einer Kamera")},
   {name:"Comfort",price:"14,99€",features: features_comfort},
-  {name:"Camera Plus",price:"4,99€",mod: "Pro Kamera (Add-On)",features: ["Integration einer zusätzlichen Kamera"]},
+  {name:"Camera Plus",price:"4,99€",mod: "/Kamera, AddOn",features: ["Integration einer zusätzlichen Kamera"]},
 ]
 const {options = defaultOptions as PricingOption[], cta = "Kaufen"} = Astro.props;
 ---
