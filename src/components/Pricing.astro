@@ -1,0 +1,79 @@
+---
+// @ts-expect-error
+import { site } from "../data.yaml";
+
+interface PricingOption {
+  name: string,
+  price: string,
+  mod?: string,
+  features: string[],
+}
+
+interface Props {
+  options?: PricingOption[],
+  cta?: string,
+}
+
+const features_basic = ["Eigenständige Fotoverwaltung", "Attribute", "Smarte Alben", "Kamera-Workflows"]
+const features_comfort = features_basic.concat(["Selbst-Erstellbare Attributte", "Versionsverwaltung", "Datei-Übertragung", "Integration ins Dateisystem", "Integration von bis zu 4 Kameras"])
+const defaultOptions = [
+  {name:"Essential",price:"9,99€",features: features_basic.concat("Integration einer Kamera")},
+  {name:"Comfort",price:"14,99€",features: features_comfort},
+  {name:"Camera Plus",price:"4,99€",mod: "/Kamera, AddOn",features: ["Integration einer zusätzlichen Kamera"]},
+]
+const {options = defaultOptions as PricingOption[], cta = "Kaufen"} = Astro.props;
+---
+<div class="bg-neutral pb-24">
+<a href="#pricing"><h1
+  id="pricing" 
+  class="text-4xl antialiased font-semibold leading-none text-center mb-14"
+>
+Preise
+</h1></a>
+<div class="grid lg:grid-cols-3 px-6 md:px-12 xl:px-32 bg-neutral pb-24 w-full">
+  {
+  options.map(({name,price,mod,features}, index)=>(
+    <div class={`p-0 ${index != 1 ? 'py-12' : 'z-10'}`}>
+    <div class={`block rounded-lg shadow-lg bg-white w-full h-full ${(index+1) % 3 == 1 ? 'lg:rounded-tr-none lg:rounded-br-none' : ''} ${(index+1) % 3 == 0 ? 'lg:rounded-tl-none lg:rounded-bl-none' : ''}`}>
+      <div class="p-6 border-b border-gray-300 text-center">
+        <p class="uppercase mb-4 text-sm">
+          <strong>{name}</strong>
+        </p>
+
+
+
+
+        <h3 class="text-2xl mb-6 flex justify-between items-center content-center relative w-[100%]">
+          <strong class="mx-auto">{price}</strong>
+          <small class="text-gray-500 text-sm absolute right-0" set:html={mod != null? mod! : null}></small>
+        </h3>
+
+        <a href={site.cta.href}
+        
+          class={`inline-block px-6 py-2.5 ${index != 1? 'text-accent bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12]' : 'text-accent bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12] lg:bg-accent lg:text-base-100 lg:hover:bg-accent-focus lg:focus:bg-accent-focus'} font-medium text-xs leading-tight uppercase rounded transition duration-150 ease-in-out w-full`}
+         data-mdb-ripple="true" data-ripple-color="primary">
+          {cta}
+        </a>
+      </div>
+      <div class={`p-6 ${index == 1 ? '' : ''}`}>
+        <ol class="list-inside">
+          {features.map((feature) =>(
+            <li class="mb-4 flex items-center">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+              class="text-green-600 w-4 h-4 mr-2" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+              </path>
+            </svg><div set:html={feature}></div>
+          </li>
+          ))
+        }
+        </ol>
+      </div>
+    </div>
+  </div>
+  ))
+  }
+</div>
+</div>
