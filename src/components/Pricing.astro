@@ -14,21 +14,21 @@ interface Props {
   cta?: string,
 }
 
-const features_basic = ["Eigenständige Fotoverwaltung", "Attribute", "Smarte Alben", "Kamera-Workflows"]
-const features_comfort = features_basic.concat(["Selbst-Erstellbare Attributte", "Versionsverwaltung", "Datei-Übertragung", "Integration ins Dateisystem", "Integration von bis zu 4 Kameras"])
+const features_basic = ["Eigenständige Fotoverwaltung", "Smarte Alben", "Kamera-Workflows", ]
+const features_comfort = features_basic.concat(["Individuelle Foto-Merkmale","Integration ins Dateisystem", "Versionsverwaltung", "Datei-Übertragung", "Lizenz für bis zu 4 Endgeräte", "Updates für Conshelv Foto 23"])
 const defaultOptions = [
-  {name:"Essential",price:"9,99€",features: features_basic.concat("Integration einer Kamera")},
-  {name:"Comfort",price:"14,99€",features: features_comfort},
-  {name:"Camera Plus",price:"4,99€",mod: "/Kamera, AddOn",features: ["Integration einer zusätzlichen Kamera"]},
+  {name:"Core",price:"49,99€",features: features_basic.concat([ "Vorgegebene Foto-Merkmale", "Lesezugriff im Dateisystem","Lizenz für bis zu 2 Endgeräte"])},
+  {name: "Comfort",price:"79,99€",features: features_comfort},
+  {name:"Device Plus",price:"9,99€",mod: "/Gerät, AddOn",features: ["Lizenz für ein zusätzliches Gerät"]},
 ]
 const {options = defaultOptions as PricingOption[], cta = "Kaufen"} = Astro.props;
 ---
 <div class="bg-neutral pb-24">
 <a href="#pricing"><h1
   id="pricing" 
-  class="text-4xl antialiased font-semibold leading-none text-center mb-14"
+  class="text-4xl antialiased font-semibold leading-none text-center mb-24"
 >
-Preise
+Preise für Conshelv Foto 23
 </h1></a>
 <div class="grid lg:grid-cols-3 px-6 md:px-12 xl:px-32 bg-neutral pb-24 w-full">
   {
