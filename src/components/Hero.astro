@@ -13,20 +13,20 @@ const {
   short = "short description",
   cta_text = "cta text",
   cta_href = "#contact",
-  image = "hero_combined.jpg",
+  image = "hero_combined_v5.jpg",
 } = Astro.props;
 ---
 
 <div class="min-h-[80vh] h-[80vh] bg-cover bg-center bg-no-repeat max-md:h-[92vh]" style={`background-image: url(${image})`}>
-  <div class="flex flex-col justify-between items-center h-full bg-neutral-content bg-opacity-40">
+  <div class="flex flex-col justify-between items-center h-full bg-[#111d23]/60"> <!-- 1a2c35 -->
     <slot name="top">
       
     </slot>
     <div class="text-neutral-content h-full p-4">
       <div class="flex flex-col justify-center text-center max-w-4xl h-full">
-        <h1 class="font-manrope mb-2 text-3xl font-extrabold text-base-100 max-md:text-xl max-md:mb-0" set:html={title}></h1>
-        <p class="font-manrope mb-16 text-base-100 font-[450] text-center tracking-tight text-xl max-md:text-base max-md:mb-8" set:html={short}></p>
-        <a href={cta_href} class="inline-block"><button class="btn btn-accent btnManagement-block text-accent-content text-lg px-24 max-md:text-sm w-full">{cta_text}</button></a>
+        <h1 class="font-manrope mb-2 text-3xl font-extrabold text-neutral max-md:text-xl max-md:mb-0" set:html={title}></h1>
+        <p class="font-manrope mb-16 text-neutral font-[450] text-center tracking-tight text-2xl max-md:text-base max-md:mb-8" set:html={short}></p>
+        <a href={cta_href} class="inline-block"><button class="btn btn-accent btnManagement-block text-neutral text-lg px-24 max-md:text-sm w-full">{cta_text}</button></a>
       </div>
     </div>
     <slot name="bottom">

@@ -13,10 +13,10 @@ module.exports = {
 	daisyui: {
 		themes: [{
 		  conshelv: {
-			"primary": "#5f5a52",
+			"primary": "#38302E",
 			"secondary": "#22AED1",
-			"accent": "#2f2d4b64",
-			"neutral": "#f3ede2",
+			"accent": "#131e23",
+			"neutral": "#e6edef",
 			"base-100": "#ffffff",
 			"info": "#a36f5b",
 			"success": "#5aa53e",
