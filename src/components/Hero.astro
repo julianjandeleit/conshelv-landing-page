@@ -13,12 +13,12 @@ const {
   short = "short description",
   cta_text = "cta text",
   cta_href = "#contact",
-  image = "https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200",
+  image = "hero_combined.jpg",
 } = Astro.props;
 ---
 
 <div class="min-h-[80vh] h-[80vh] bg-cover bg-center bg-no-repeat max-md:h-[92vh]" style={`background-image: url(${image})`}>
-  <div class="flex flex-col justify-between items-center h-full bg-primary bg-opacity-70">
+  <div class="flex flex-col justify-between items-center h-full bg-neutral-content bg-opacity-40">
     <slot name="top">
       
     </slot>
