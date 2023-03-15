@@ -95,7 +95,10 @@ function consentGranted() {
   gtag('consent', 'update', {
     'ad_storage': 'granted',
     'analytics_storage': 'denied'
-  })};
+  });
+  gtag("js", new Date());
+  gtag("config", "G-2KXXHX04HJ");
+};
 
     function showMenu(doShow) {
       let menu = document.getElementById("menu");
