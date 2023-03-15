@@ -15,7 +15,7 @@ module.exports = {
 		  conshelv: {
 			"primary": "#38302E",
 			"secondary": "#22AED1",
-			"accent": "#131e23",
+			"accent": "#b3d5ff",
 			"neutral": "#e6edef",
 			"base-100": "#ffffff",
 			"info": "#a36f5b",

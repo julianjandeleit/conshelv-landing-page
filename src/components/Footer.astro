@@ -23,8 +23,10 @@ const {imgs = []} = Astro.props;
     </div>-->
     <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
       <div class="right-0 flex flex-col">
-        <span>Main image from <a href="https://unsplash.com/@christianw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christian Wiediger</a> on <a href="https://unsplash.com/photos/INEpZ_RSQYM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> and
-          <a href="https://unsplash.com/@gleblucky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gleb Lucky</a> on <a href="https://unsplash.com/photos/V3qMl_4sq1g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <span>
+          Main image from <a href="https://unsplash.com/@ohlrogge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Niklas Ohlrogge</a>
+          and 
+          <a href="https://unsplash.com/@builtbymath?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Math</a> on <a href="https://unsplash.com/photos/lfRlv3nuf78?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </span>
         <!--<a href="https://github.com/feathericons/feather" title="webpage icons">Icons by open source contributers from feather-icons</a>-->
         {imgs.map(({label,attrib}) => (<div set:html={`${label}: ${attrib}`}></div>))}
