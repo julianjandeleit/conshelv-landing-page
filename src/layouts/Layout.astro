@@ -18,11 +18,24 @@ import Footer from "../components/Footer.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+	<script type="text/partytown">
+		// Define dataLayer and the gtag function.
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		
+		// Default ad_storage to 'denied' as a placeholder
+		// Determine actual values based on your own requirements
+		gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied'
+});
+	</script>
     <script
       type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-2KXXHX04HJ"
     ></script>
     <script type="text/partytown">
+	  //window['ga-disable-MEASUREMENT_ID'] = true;
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -30,6 +43,15 @@ import Footer from "../components/Footer.astro";
       gtag("js", new Date());
       gtag("config", "G-2KXXHX04HJ");
     </script>
+	<!-- Update this section based on your business requirements. -->
+<script type="text/partytown">
+	function consentGranted() {
+	  gtag('consent', 'update', {
+		'ad_storage': 'granted',
+		'analytics_storage': 'denied'
+	  });
+	}
+  </script>
   </head>
   <body>
     <slot />
