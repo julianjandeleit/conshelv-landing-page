@@ -4,7 +4,7 @@ const test = "hallo";
 ---
 
 <cookie-banner>
-    <div id="menu" class="w-full h-full bg-gray-900 bg-opacity-80 top-0 fixed sticky-0 z-50">
+    <div id="menu" class="w-full h-full bg-gray-900 bg-opacity-80 top-0 fixed sticky-0 z-50 hidden">
       <div class="2xl:container  2xl:mx-auto py-48 px-4 md:px-28 flex justify-center items-center">
         <div class="w-96 md:w-auto dark:bg-gray-800 relative flex flex-col justify-center items-center bg-white py-16 px-4 md:px-24 xl:py-24 xl:px-36">
           <div role="banner">
@@ -43,10 +43,10 @@ const test = "hallo";
             </svg>
           </div>
           <div class="mt-12">
-            <h1 role="main" class="text-3xl dark:text-white lg:text-4xl font-semibold leading-7 lg:leading-9 text-center text-gray-800">We use cookies</h1>
+            <h1 role="main" class="text-3xl dark:text-white lg:text-4xl font-semibold leading-7 lg:leading-9 text-center text-gray-800">We use cookies.</h1>
           </div>
           <div class="mt">
-            <p class="mt-6 sm:w-80 text-base dark:text-white leading-7 text-center text-gray-800">Please, accept these sweeties to continue enjoying our site!</p>
+            <p class="mt-6 sm:w-80 text-base dark:text-white leading-7 text-center text-gray-800">Please, accept these sweeties to continue enjoying our site and help us to improve this website!</p>
           </div>
           <button id="acceptCookie" class="w-full dark:text-gray-800 dark:hover:bg-gray-100 dark:bg-white sm:w-auto mt-14 text-base leading-4 text-center text-white py-6 px-16 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 hover:bg-black">Mmm... Sweet!</button>
           <div id="denyCookie" class="mt-6 dark:text-white dark:hover:border-white text-base leading-none focus:outline-none hover:border-gray-800 focus:border-gray-800 border-b border-transparent text-center text-gray-800">Nope.. I am on a diet</div>
@@ -92,15 +92,51 @@ const test = "hallo";
     function gtag(){dataLayer.push(arguments);}
 function consentGranted() {
     console.log("consent granted");
+    setCookie("consent","granted",90);
   gtag('consent', 'update', {
-    'ad_storage': 'granted',
-    'analytics_storage': 'denied'
+    'ad_storage': 'denied',
+    'analytics_storage': 'granted'
   });
   gtag("js", new Date());
   gtag("config", "G-2KXXHX04HJ");
 };
 
-    function showMenu(doShow) {
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+
+function showMenu(doShow) {
       let menu = document.getElementById("menu");
       if (doShow) {
         menu?.classList.remove("hidden");  
@@ -134,5 +170,12 @@ constructor() {
 
 customElements.define('cookie-banner', CookieBannner);
 
+let cookie = getCookie("consent");
+
+if (cookie == "") {
+  showMenu(true);
+} else {
+  showMenu(false);
+}
 
     </script>
