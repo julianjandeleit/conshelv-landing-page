@@ -19,9 +19,9 @@ const features_essential = [
 const features_comfort = features_essential.concat(["Kamera-Workflow", "Automatisches File-Management","Datei-Übertragung"])
 const features_advanced = features_comfort.concat(["Archiv-Versionierung","Foto-Beziehungen","Duplikat-Erkennung"])
 const defaultOptions = [
-  {name:"Essential",price:"19,99€",features: features_essential},
-  {name: "Comfort",price:"39,99€",features: features_comfort},
-  {name:"Advanced",price:"59,99€",features: features_advanced},
+  {name:"Base",price:"Kostenlos",features: features_essential},
+  {name: "Essential",price:"19,99€",features: features_comfort},
+  {name:"Advanced",price:"39,99€",features: features_advanced},
 ]
 const {options = defaultOptions as PricingOption[], cta = "Kaufen"} = Astro.props;
 ---
