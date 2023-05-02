@@ -10,19 +10,23 @@ import Navigation from '../components/Navigation.astro';
 import Pricing from '../components/Pricing.astro';
 // @ts-expect-error
 import { site } from "../data.yaml";
+import SleekplanWidget from '../components/SleekplanWidget.astro';
+import OpenDevelopment from '../components/OpenDevelopment.astro';
 ---
 
 <Layout title={`Conshelv - ${site.slogan}`}>
 	<main>
 		<!--<Hero title={site.slogan} short={site.short} cta_text={site.cta.text}>-->
 		<Hero title={`${site.slogan}`} short={site.short} cta_text="Jetzt Ausprobieren" cta_href={site.cta.href}>
-			<Navigation slot="top" links={[{text: "Features", href: "#features"},{text: "Preise", href: "#pricing"},{text: "Contact", href: "#contact"}]}/>
+			<Navigation slot="top" links={[{text: "Features", href: "#features"},{text: "Preise", href: "#pricing"},{text: "Entwicklung", href: "#opendev"},{text: "Kontakt", href: "#contact"}]}/>
 			<Divider slot="bottom" fill="fill-neutral" background="bg-transparent" />			
 		</Hero>
 		<FeatureSection />
 		<Divider fill="fill-neutral" background="bg-neutral" />
 		<Pricing />
+		<OpenDevelopment/>
 		<Divider fill="fill-accent" background="bg-neutral" />
 		<Contact/>
+		<SleekplanWidget/>
 	</main>
 </Layout>

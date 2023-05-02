@@ -74,12 +74,14 @@ const {title = "Conshelv", icon = svgReference , links = [] } = Astro.props;
 		</button>
 	</div>
 	<ul class="items-stretch hidden space-x-3 md:hidden">
-		<li class="flex flex-col justify-center place-items-center">
+		<div class="flex flex-col place-items-center">
+		<li class="flex flex-col justify-start content-start items-start">
 			<div class="mb-4"></div>
 			{links.map(({text, href}) => (
 				<a rel="noopener noreferrer" href={href} class="flex items-center py-2 border-b-2 border-accent dark:border-transparent text-neutral hover:underline" set:html={text}></a>
 			))}
 		</li>
+		</div>
 	</ul>
 </nav-switcher>
 </nav>

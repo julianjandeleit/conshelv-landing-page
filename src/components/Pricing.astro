@@ -23,7 +23,7 @@ const defaultOptions = [
   {name: "Essential",price:"19,99€",features: features_comfort},
   {name:"Advanced",price:"39,99€",features: features_advanced},
 ]
-const {options = defaultOptions as PricingOption[], cta = "Kaufen"} = Astro.props;
+const {options = defaultOptions as PricingOption[], cta = "Bald Verfügbar"} = Astro.props;
 ---
 <div class="bg-neutral pb-24">
 <a href="#pricing"><h1
@@ -52,7 +52,7 @@ Preise für Conshelv Foto 23
 
         <a href={site.cta.href}
         
-          class={`inline-block px-6 py-2.5 ${index != 1? 'text-accent-content bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12]' : 'text-accent-content bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12] lg:bg-accent lg:text-accent-content lg:hover:bg-accent-focus lg:focus:bg-accent-focus'} font-medium text-xs leading-tight uppercase rounded transition duration-150 ease-in-out w-full`}
+          class={`inline-block px-6 py-2.5 ${index != 1? 'text-accent-content bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12]' : 'text-accent-content bg-primary/[.12] hover:bg-primary-focus/[.12] focus:bg-primary-focus[.12] lg:bg-accent lg:text-accent-content lg:hover:bg-accent-focus lg:focus:bg-accent-focus'} font-medium text-xs leading-tight uppercase rounded transition duration-150 ease-in-out w-full btn-disabled`}
          data-mdb-ripple="true" data-ripple-color="primary">
           {cta}
         </a>

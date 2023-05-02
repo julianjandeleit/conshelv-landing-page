@@ -1,0 +1,57 @@
+---
+// @ts-expect-error
+import { site } from "../data.yaml";
+const download_link = site.cta.href;
+const roadmap_link = "https://trello.com/b/bgIDGbou/roadmap";
+const feature_requests_link = "https://conshelv.sleekplan.app/"
+
+interface Element {
+  title: string;
+  text: string;
+}
+
+interface Props {
+  elements?: Element[];
+}
+
+const defaultElements = [
+    {title: "Early Access", text: `Conshelv kann in der Pre-Release Version kostenlos benutzt und ausprobiert werden. Tragen Sie sich in der <a class="link-primary font-bold underline" href='${download_link}'>Warteliste</a> ein um Zugang zu bekommen.`},
+    {title:"Roadmap", text: `Geplante Änderungen und Updates können gesehen werden in unserer <a class="link-primary font-bold underline" href='${roadmap_link}'>Roadmap</a>.`},
+    {title: "Feedback & Vorschläge", text: `Feedback, neue Vorschläge oder auch Bugs können in unserem <a class="link-primary font-bold underline" href='${feature_requests_link}'>Feedback-Board</a> berichtet und diskutiert werden. Vielversprechende Ideen werden in die Roadmap übernommen und in einem zukünftigen Release erscheinen.`}
+]
+const { elements = defaultElements as Element[] } =
+  Astro.props;
+---
+
+<div class="bg-neutral pb-24">
+  <a href="#opendev"
+    ><h1
+      id="opendev"
+      class="text-4xl antialiased font-semibold leading-none text-center mb-24"
+    >
+      Early Access, Roadmap und Feedback
+    </h1>
+  </a>
+  <div class="text-xl text-center mb-12">
+    Helfen Sie die Fotoverwaltung Ihrer Wünsche zu formen indem Sie Feedback geben, Bugs melden oder
+    sogar eigene Vorschläge für neue Features einbringen!
+  </div>
+  <div
+    class="px-6 md:px-12 xl:px-32 bg-neutral pb-24 w-full flex flex-col lg:flex-row justify-center items-start gap-y-2 gap-x-12"
+  >
+
+  {
+    elements.map(({title, text}, _index) =>(
+    <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box w-full text-center">
+        <input type="checkbox"> 
+  <div class="collapse-title text-xl font-medium">
+    {title}
+  </div>
+  <div class="collapse-content">
+    <p set:html={text}></p>
+  </div>
+</div>
+        ))
+  }
+  </div>
+</div>
