@@ -14,7 +14,7 @@ site:
         img: https://images.unsplash.com/photo-1518166203834-edc1ce602394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@bernardhermant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bernard Hermant</a> on <a href="https://unsplash.com/s/photos/locked-box?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs:
-         - "Conshelv ist eine eigenständige Photo-Management-Software, die sich nahtlos in Ihr Dateisystem integriert. So können Sie Ihre Fotos einfach verwalten wie sie es gewohnt sind und mit allen herkömmlichen Apps öffnen."
+         - "Conshelv ist eine eigenständige Photo-Management-Software, die sich nahtlos in Ihr Dateisystem integriert. So können Sie Ihre Fotos verwalten wie sie es gewohnt sind und mit allen herkömmlichen Apps öffnen."
          - "Außerdem können Sie Conshelv dadurch als langfristiges Archiv für Ihre Fotos nutzen und wissen, dass Sie immer an ihre Bilder kommen werden. Mit Conshelv haben Sie eine zuverlässige Lösung, um all Ihre Fotos an einem Ort zu speichern und zu organisieren."
       - title: Synchronisation zwischen Geräten
         img: https://images.unsplash.com/photo-1495564103921-67412af57da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80
@@ -22,7 +22,7 @@ site:
         paragraphs: 
          - "Conshelv kann Ihr Archiv direk zwischen Ihren Geräten synchronisieren, ohne auf eine dritte Cloud angewiesen zu sein."
          - "Synchronisieren Sie nur eine Auswahl Ihrer Bilder um Platz zu sparen, ohne Zugriff auf die gesamte Sammlung zu verzichten."
-         - "Dabei sind die synchronisierten Bilder stets heruntergeladen und können ohne Wartezeit in voller Größe geöffnet werden."
+         - "Dabei sind die synchronisierten Bilder stets lokal gespeichert und können ohne Wartezeit in voller Größe geöffnet werden."
       - title: Plugin-System
         img: https://images.unsplash.com/photo-1532289608746-8aaaa40620f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@maxcodes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maxwell Nelson</a> on <a href="https://unsplash.com/photos/VJeAZr-Bu9E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
