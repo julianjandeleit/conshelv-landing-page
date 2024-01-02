@@ -1,38 +1,52 @@
 ---
-const {onDeny = function () {}, onAccept = function () {}} = Astro.props;
+const { onDeny = function () {}, onAccept = function () {} } = Astro.props;
 const test = "hallo";
 ---
 
 <cookie-banner>
-  <!-- https://merakiui.com/components/cookies -->  
-  <section id="menu" class="fixed bottom-0 w-full bg-gray-50 dark:bg-gray-800 z-50">
-      <div class="container px-4 py-8 mx-auto lg:flex lg:items-center lg:gap-x-16">
-          <!--<p class="text-gray-600 dark:text-gray-300">By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.</p>-->
-          <p class="text-gray-600 dark:text-gray-300">By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance user experience, analyze site usage, and assist in our marketing efforts.</p>
-          <div class="flex items-center mt-6 gap-x-4 lg:gap-x-8 shrink-0 lg:mt-0">
-              <!--<button class="w-1/2 text-sm text-gray-800 underline transition-colors duration-300 md:w-auto dark:text-white dark:hover:text-gray-400 hover:text-gray-600 focus:outline-none">
+  <!-- https://merakiui.com/components/cookies -->
+  <section
+    id="menu"
+    class="fixed bottom-0 w-full bg-gray-50 dark:bg-gray-800 z-50"
+  >
+    <div
+      class="container px-4 py-8 mx-auto lg:flex lg:items-center lg:gap-x-16"
+    >
+      <!--<p class="text-gray-600 dark:text-gray-300">By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.</p>-->
+      <p class="text-gray-600 dark:text-gray-300">
+        By clicking “Accept All Cookies”, you agree to the storing of cookies on
+        your device to enhance user experience, analyze site usage, and assist
+        in our marketing efforts.
+      </p>
+      <div class="flex items-center mt-6 gap-x-4 lg:gap-x-8 shrink-0 lg:mt-0">
+        <!--<button class="w-1/2 text-sm text-gray-800 underline transition-colors duration-300 md:w-auto dark:text-white dark:hover:text-gray-400 hover:text-gray-600 focus:outline-none">
                   Cookie Setting
               </button>-->
-  
-              <button id="acceptCookie" class="text-sm md:w-auto font-medium bg-gray-900 rounded-lg hover:bg-gray-900/80 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-                  Accept All Cookies
-              </button>
-          </div>
+
+        <button
+          id="acceptCookie"
+          class="text-sm md:w-auto font-medium bg-gray-900 rounded-lg hover:bg-gray-900/80 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none"
+        >
+          Accept All Cookies
+        </button>
       </div>
+    </div>
   </section>
 </cookie-banner>
 
 <script type="text/partytown">
-    // Define dataLayer and the gtag function.
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    
-    // Default ad_storage to 'denied' as a placeholder
-    // Determine actual values based on your own requirements
-    gtag('consent', 'default', {
-'ad_storage': 'denied',
-'analytics_storage': 'denied'
-});
+  // Define dataLayer and the gtag function.
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  // Default ad_storage to 'denied' as a placeholder
+  // Determine actual values based on your own requirements
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    analytics_storage: "denied",
+  });
 </script>
 <script
   type="text/partytown"
@@ -49,95 +63,98 @@ const test = "hallo";
 </script>
 <!-- Update this section based on your business requirements. -->
 <script type="text/partytown">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-function consentGranted() {
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  function consentGranted() {
     console.log("consent granted");
-    setCookie("consent","granted",90);
-  gtag('consent', 'update', {
-    'ad_storage': 'denied',
-    'analytics_storage': 'granted'
-  });
-  gtag("js", new Date());
-  gtag("config", "G-2KXXHX04HJ");
-};
+    setCookie("consent", "granted", 90);
+    gtag("consent", "update", {
+      ad_storage: "denied",
+      analytics_storage: "granted",
+    });
+    gtag("js", new Date());
+    gtag("config", "G-2KXXHX04HJ");
+  }
 
-function setCookie(cname,cvalue,exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
     }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
+    return "";
+  }
+
+  function checkCookie() {
+    let user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+      user = prompt("Please enter your name:", "");
+      if (user != "" && user != null) {
+        setCookie("username", user, 30);
+      }
     }
   }
-  return "";
-}
 
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
+  function showMenu(doShow) {
+    console.log(doShow);
+    let menu = document.getElementById("menu");
+    if (doShow) {
+      menu?.classList.remove("hidden");
+    } else {
+      menu?.classList.add("hidden");
+    }
+  }
+
+  class CookieBannner extends HTMLElement {
+    constructor() {
+      super();
+    }
+  }
+
+  customElements.define("cookie-banner", CookieBannner);
+
+  let cookie = getCookie("consent");
+
+  if (cookie == "") {
+    showMenu(true);
   } else {
-     user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
-     }
+    showMenu(false);
+    consentGranted();
   }
-}
 
-function showMenu(doShow) {
-      let menu = document.getElementById("menu");
-      if (doShow) {
-        menu?.classList.remove("hidden");  
-        
-      }
-      else {
-        menu?.classList.add("hidden");  
-      }
-    };
+  console.log("I have been called");
 
-    class CookieBannner extends HTMLElement {
-constructor() {
-  super();
-
+  //NOTE: In theory this shoul've gone into the class to allow scoped querySelectors. However, there the constructor was only called after the element was clicked which meant you needed to click twice in order for the banner to disappear so it was moved here.
   // Read the message from the data attribute.
-  let acceptButton = this.querySelector("#acceptCookie");
-    acceptButton?.addEventListener("click",(e) => {
-        showMenu(false);
-        consentGranted();
-    });
-    let closeButton = this.querySelector("#closeCookie");
-    closeButton?.addEventListener("click",(e) => {
-        showMenu(false);
-    });
-    let denyButton = this.querySelector("#denyCookie");
-    denyButton?.addEventListener("click",(e) => {
-        showMenu(false);
-    });
-}
-}
-
-customElements.define('cookie-banner', CookieBannner);
-
-let cookie = getCookie("consent");
-
-if (cookie == "") {
-  showMenu(true);
-} else {
-  showMenu(false);
-  consentGranted();
-}
-
+  let acceptButton = document.querySelectorAll("#acceptCookie")[0];
+  acceptButton?.addEventListener("click", (e) => {
+    showMenu(false);
+    consentGranted();
+  });
+  let closeButton = document.querySelector("#closeCookie");
+  closeButton?.addEventListener("click", (e) => {
+    showMenu(false);
+  });
+  let denyButton = document.querySelector("#denyCookie");
+  denyButton?.addEventListener("click", (e) => {
+    showMenu(false);
+  });
 </script>

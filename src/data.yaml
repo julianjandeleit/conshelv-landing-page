@@ -1,36 +1,38 @@
 site:
-    slogan: "Conshelv Foto"
-    short: "Deine Bilder sichern, senden und synchronisieren"
+    slogan: "Organiziere deine Bilder mit hierarchischen Schlagworten"
+    short: "Teile deine Bibliothek mit all deinen Geräten"
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
-    sections_header: "Diese Vorteile bietet Conshelv"
+    sections_header: "Das bietet Conshelv"
     sections:
-      - title: Eigenständige Photo-Management-Software
+      - title: Hierarchische Schlagworte
         img: https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Mclean</a> on <a href="https://unsplash.com/s/photos/photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        paragraphs: 
+         - "Statt nur nach Datum oder Ordner zu sortieren, nutzt Conshelv hierarchische Schlagworte, auch Attribute genannt. Damit können Sie Ihre eigenen Kategorien erstellen und diese nutzen, um Ihre Foto-Bibliothek auf eine personalisierte Art zu organisieren."
+         - "Nutzten Sie dann Ihre Attribute, um Ihre Foto-Bibliothek schnell und einfach nach einer bestimmten Gruppe von Bildern zu durchsuchen, oder Navigieren Sie entlang der Schlagworte zu verwandten Bildern."
+      - title: Integration ins Dateisystem
+        img: https://images.unsplash.com/photo-1518166203834-edc1ce602394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
+        img_attrib: Photo by <a href="https://unsplash.com/@bernardhermant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bernard Hermant</a> on <a href="https://unsplash.com/s/photos/locked-box?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs:
-         - "Conshelv ist eine eigenständige Photo-Management-Software, die sich nahtlos in Ihr Dateisystem integriert. So können Sie Ihre Fotos einfach verwalten, ohne auf Drittanbieter-Apps angewiesen zu sein."
-         - "Nutzen Sie Conshelv als langfristiges Archiv für Ihre Fotos, ohne sich Gedanken über Abonnements oder den Wechsel zwischen verschiedenen Apps machen zu müssen. Mit Conshelv haben Sie eine zuverlässige Lösung, um all Ihre Fotos an einem Ort zu speichern und zu organisieren."
-      - title: Attribute und Smarte Alben
+         - "Conshelv ist eine eigenständige Photo-Management-Software, die sich nahtlos in Ihr Dateisystem integriert. So können Sie Ihre Fotos einfach verwalten wie sie es gewohnt sind und mit allen herkömmlichen Apps öffnen."
+         - "Außerdem können Sie Conshelv dadurch als langfristiges Archiv für Ihre Fotos nutzen und wissen, dass Sie immer an ihre Bilder kommen werden. Mit Conshelv haben Sie eine zuverlässige Lösung, um all Ihre Fotos an einem Ort zu speichern und zu organisieren."
+      - title: Synchronisation zwischen Geräten
         img: https://images.unsplash.com/photo-1495564103921-67412af57da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@anckor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julian O'hayon</a> on <a href="https://unsplash.com/s/photos/digital-devices?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs: 
-         - "Statt nur nach Datum oder Ordner zu sortieren, nutzt Conshelv kategorische Tags oder Attribute, um Bilder nach Kontext zu ordnen. Sie können Ihre eigenen Kategorien für Tags erstellen und diese nutzen, um Ihre Foto-Bibliothek auf eine personalisierte Art zu organisieren."
-         - "Um Ihre Foto-Bibliothek schnell und einfach zu durchsuchen, bietet Conshelv Smarte-Sammlungen an. Diese nutzten Ihre Attribute, um automatisch Alben von Bildern zu erstellen, die bestimmten Kriterien entsprechen. So können Sie schnell auf bestimmte Gruppen von Bildern zuzugreifen."
-      - title: Workflows, Transfer und automatisches File-Management
+         - "Conshelv kann Ihr Archiv direk zwischen Ihren Geräten synchronisieren, ohne auf eine dritte Cloud angewiesen zu sein."
+         - "Synchronisieren Sie nur eine Auswahl Ihrer Bilder um Platz zu sparen, ohne Zugriff auf die gesamte Sammlung zu verzichten."
+         - "Dabei sind die synchronisierten Bilder stets heruntergeladen und können ohne Wartezeit in voller Größe geöffnet werden."
+      - title: Plugin-System
         img: https://images.unsplash.com/photo-1532289608746-8aaaa40620f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@maxcodes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maxwell Nelson</a> on <a href="https://unsplash.com/photos/VJeAZr-Bu9E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs: 
-         - "Conshelv bietet maßgeschneiderte Workflows, die Ihnen helfen, Ihre Bilder direkt von der Kamera zu übertragen und zu verschlagworten. Durch die Automatisierung des File-Managements sparen Sie Zeit und vermeiden manuelle Schritte."
-         - "Sie können Ihre Fotos einfach verwalten und von jedem Gerät aus darauf zugreifen, da Conshelv eine synchronisierte Archivierung über das Internet ermöglicht."
-      - title: Versionierung, Beziehungen und Duplikat-Erkennung
-        img: https://images.unsplash.com/photo-1518166203834-edc1ce602394?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
-        img_attrib: Photo by <a href="https://unsplash.com/@bernardhermant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bernard Hermant</a> on <a href="https://unsplash.com/s/photos/locked-box?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        paragraphs: 
-         - "Conshelv verfügt über eine automatische Duplikat-Erkennung, mit der Sie Ihre Foto-Bibliothek effizienter verwalten können. Mit der Versionierungsfunktion von Conshelv können Sie zu einem früheren Zustand Ihrer Bibliothek zurückkehren, falls Sie versehentlich etwas geändert oder gelöscht haben."
-         - "Darüber hinaus können Sie Beziehungen zwischen Bildern und Sidecar-Dateien erkennen und schnell durch Ihre Foto-Sammlung navigieren."
+         - "Conshelv bietet eine Schnittstelle für Erweiterungen, sodass Sie Ihren individuellen Arbeitsablauf automatisieren können."
+         - "Manuelles kopieren von der Kamera und synchronisieren zwischen Geräten gehören so der Vergangenheit an. Sogar Schlagworte können automatisch und mit KI zugewiesen werden."
+         - "Bei Interesse am Plugin-System, kontaktieren sie bitte <a class='underline' href='info@conshelv.com'>info@conshelv.com</a>."
     cta:
-      text: "Jetzt ausprobieren"
-      desc: "Unverbindlich und kostenlos Anmelden"
+      text: "Jetzt anmelden"
+      desc: "Zum Newsletter Anmelden"
       href: "https://d472b0d2.sibforms.com/serve/MUIEABD-K7xsEewUxYV94JqQ6ydStzikCxgPVa2uR_VQ4bJY07_HBzanp1OEsXT8n7nTLLyNUFeMcD4mgoloxaRw_qOAtASUETOF7pwKiduaeS9VRlJDRIo1CGbZNNfmahAfJMG6QhBZiCRgHUUtTKmHDcnX9UcGwkSneZXple9vb_EzkkbSuNE0qIQkaQFAqdj7-tV4V4k9AjZ0"
       id: cta
     contact:

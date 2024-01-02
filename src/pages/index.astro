@@ -1,32 +1,52 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 
-import Hero from '../components/Hero.astro'
-import Divider from '../components/Divider.astro';
-import FeatureSection from '../components/FeatureSection.astro';
-import Contact from '../components/Contact.astro';
-import Navigation from '../components/Navigation.astro';
-import Pricing from '../components/Pricing.astro';
+import Hero from "../components/Hero.astro";
+import Divider from "../components/Divider.astro";
+import FeatureSection from "../components/FeatureSection.astro";
+import Contact from "../components/Contact.astro";
+import Navigation from "../components/Navigation.astro";
+import Pricing from "../components/Pricing.astro";
 // @ts-expect-error
 import { site } from "../data.yaml";
-import SleekplanWidget from '../components/SleekplanWidget.astro';
-import OpenDevelopment from '../components/OpenDevelopment.astro';
+import SleekplanWidget from "../components/SleekplanWidget.astro";
+import OpenDevelopment from "../components/OpenDevelopment.astro";
 ---
 
 <Layout title={`Conshelv - ${site.slogan}`}>
 	<main>
 		<!--<Hero title={site.slogan} short={site.short} cta_text={site.cta.text}>-->
-		<Hero title={`${site.slogan}`} short={site.short} cta_text="Jetzt Ausprobieren" cta_href={"#opendev"}>
-			<Navigation slot="top" links={[{text: "Features", href: "#features"},{text: "Preise", href: "#pricing"},{text: "Entwicklung", href: "#opendev"},{text: "Kontakt", href: "#contact"}]}/>
-			<Divider slot="bottom" fill="fill-neutral" background="bg-transparent" />			
+		<Hero
+			title={`${site.slogan}`}
+			short={site.short}
+			cta_text="Jetzt Ausprobieren"
+			cta_href={"#opendev"}
+		>
+			<Navigation
+				slot="top"
+				links={[
+					{
+						text: "Features",
+						href: "#features",
+					} /*{text: "Preise", href: "#pricing"}*/,
+					,
+					{ text: "Entwicklung", href: "#opendev" },
+					{ text: "Kontakt", href: "#contact" },
+				]}
+			/>
+			<Divider
+				slot="bottom"
+				fill="fill-neutral"
+				background="bg-transparent"
+			/>
 		</Hero>
 		<FeatureSection />
 		<Divider fill="fill-neutral" background="bg-neutral" />
-		<Pricing />
-		<OpenDevelopment/>
+		<!--<Pricing />-->
+		<OpenDevelopment />
 		<Divider fill="fill-accent" background="bg-neutral" />
-		<Contact/>
-		<SleekplanWidget/>
+		<Contact />
+		<SleekplanWidget />
 	</main>
 </Layout>
