@@ -20,7 +20,7 @@ site:
         img: https://images.unsplash.com/photo-1495564103921-67412af57da3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80
         img_attrib: Photo by <a href="https://unsplash.com/@anckor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Julian O'hayon</a> on <a href="https://unsplash.com/s/photos/digital-devices?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         paragraphs: 
-         - "Conshelv kann Ihr Archiv direkt zwischen Ihren Geräten synchronisieren, ohne auf eine dritte Cloud angewiesen zu sein."
+         - "Conshelv kann Ihr Archiv direkt zwischen Ihren Geräten synchronisieren, ohne auf eine Cloud angewiesen zu sein."
          - "Synchronisieren Sie nur eine Auswahl Ihrer Bilder um Platz zu sparen, ohne Zugriff auf die gesamte Sammlung zu verzichten."
          - "Dabei sind die synchronisierten Bilder stets lokal gespeichert und können ohne Wartezeit in voller Größe geöffnet werden."
       - title: Plugin-System
