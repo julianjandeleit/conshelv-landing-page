@@ -26,12 +26,12 @@ const { sections = site.sections as Section[], cta = site.cta as Cta } =
   class="pb-5 bg-neutral text-neutral-content content-center py-16 mx-auto md:p-10 md:pb-5"
 >
   <a href="#features"
-    ><h1
+    ><h2
       id="features"
       class="text-4xl antialiased font-semibold leading-none text-center mb-14"
     >
       {site.sections_header}
-    </h1></a
+    </h2></a
   >
   <div
     class="flex flex-row flex-wrap content-center justify-center xl:px-48 lg:mb-12 lg:mt-24"
@@ -57,12 +57,12 @@ const { sections = site.sections as Section[], cta = site.cta as Cta } =
                 <p class="text-gray-700 text-base mb-4" set:html={`${par}`} />
               ))}
 
-              <a class="place-self-end w-[100%]" href={cta.href}>
+              <!--<a class="place-self-end w-[100%]" href={cta.href}>
                 <div
                   class="btn btn-accent text-accent-content w-[100%]"
                   set:html={`${cta.text}`}
                 />
-              </a>
+              </a>-->
             </div>
           </div>
         </div>

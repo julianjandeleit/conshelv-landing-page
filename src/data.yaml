@@ -1,5 +1,8 @@
 site:
-    slogan: "Organiziere deine Bilder mit hierarchischen Schlagworten"
+    meta:
+      title: "Moderne Fotoverwaltung nach Schlagworten"
+      description: "Bilder Organisieren nach Schlagworten, senden an deine Geräte ohne Cloud und langfristiges Speichern."
+    slogan: "Organisiere deine Bilder mit hierarchischen Schlagworten"
     short: "Teile deine Bibliothek mit all deinen Geräten"
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "Das bietet Conshelv"

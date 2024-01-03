@@ -14,7 +14,10 @@ import SleekplanWidget from "../components/SleekplanWidget.astro";
 import OpenDevelopment from "../components/OpenDevelopment.astro";
 ---
 
-<Layout title={`Conshelv - ${site.slogan}`}>
+<Layout
+	title={`Conshelv - ${site.meta.title}`}
+	description={`${site.meta.description}`}
+>
 	<main>
 		<!--<Hero title={site.slogan} short={site.short} cta_text={site.cta.text}>-->
 		<Hero

@@ -2,9 +2,10 @@
 import "../style.css";
 export interface Props {
   title: string;
+  description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 // @ts-expect-error
 import { site } from "../data.yaml";
 import Footer from "../components/Footer.astro";
@@ -16,12 +17,13 @@ import Cookie from "../components/cookie.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={`${description}`} />
   </head>
   <body>
-	<Cookie/>
+    <Cookie />
     <slot />
     <Footer
       imgs={// @ts-expect-error

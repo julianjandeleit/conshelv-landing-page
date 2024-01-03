@@ -1,35 +1,51 @@
 ---
 interface Attribution {
-    label: string;
-    attrib: string;
-};
-
-interface Props {
-    imgs?: Attribution[];
+  label: string;
+  attrib: string;
 }
 
-const {imgs = []} = Astro.props;
+interface Props {
+  imgs?: Attribution[];
+}
+
+const { imgs = [] } = Astro.props;
 ---
 
-<footer class="footer columns-3 p-4 bg-primary text-primary-content w-fill relative items-center max-md:flex max-md:flex-col">
-    <div class="flex flex-col">
+<footer
+  class="footer columns-3 p-4 bg-primary text-primary-content w-fill relative items-center max-md:flex max-md:flex-col"
+>
+  <div class="flex flex-col">
     <div class="items-center grid-flow-col">
-      <!--<img class="h-8 w-8" src="/assets/favicon.ico"/>--> <p>Copyright © 2022 &middot;  All rights reserved</p>
+      <!--<img class="h-8 w-8" src="/assets/favicon.ico"/>-->
+      <p>Copyright © 2024 &middot; All rights reserved</p>
     </div>
     <a href="/impressum">Impressum und Datenschutzerklärung</a>
-    </div> 
-    <!--<div class="grid-flow-col items-center place-self-center">
+  </div>
+  <!--<div class="grid-flow-col items-center place-self-center">
       We use <a href="https://microanalytics.io/">microanalytics.io</a> for privacy-friendly website analytics.
     </div>-->
-    <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-      <div class="right-0 flex flex-col">
-        <span>
-          Main image from <a href="https://unsplash.com/@ohlrogge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Niklas Ohlrogge</a>
-          and 
-          <a href="https://unsplash.com/@builtbymath?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Math</a> on <a href="https://unsplash.com/photos/lfRlv3nuf78?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </span>
-        <!--<a href="https://github.com/feathericons/feather" title="webpage icons">Icons by open source contributers from feather-icons</a>-->
-        {imgs.map(({label,attrib}) => (<div set:html={`${label}: ${attrib}`}></div>))}
-      </div>
+  <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <div class="right-0 flex flex-col">
+      <span>
+        Main image from <a
+          href="https://unsplash.com/@ohlrogge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Niklas Ohlrogge</a
+        >
+        and
+        <a
+          href="https://unsplash.com/@builtbymath?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Math</a
+        > on <a
+          href="https://unsplash.com/photos/lfRlv3nuf78?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </span>
+      <!--<a href="https://github.com/feathericons/feather" title="webpage icons">Icons by open source contributers from feather-icons</a>-->
+      {
+        imgs.map(({ label, attrib }) => (
+          <div set:html={`${label}: ${attrib}`} />
+        ))
+      }
     </div>
+  </div>
 </footer>
