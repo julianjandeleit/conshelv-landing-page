@@ -32,7 +32,7 @@ site:
         paragraphs: 
          - "Conshelv bietet eine Schnittstelle für Erweiterungen, sodass Sie Ihren individuellen Arbeitsablauf automatisieren können."
          - "Manuelles kopieren von der Kamera und synchronisieren zwischen Geräten gehören so der Vergangenheit an. Sogar Schlagworte können automatisch und mit KI zugewiesen werden."
-         - "Bei Interesse am Plugin-System, kontaktieren sie bitte <a class='underline' href='info@conshelv.com'>info@conshelv.com</a>."
+         - "Bei Interesse am Plugin-System, kontaktieren sie bitte <a class='underline' href='mailto:info@conshelv.com'>info@conshelv.com</a>."
     cta:
       text: "Jetzt anmelden"
       desc: "Zum Newsletter Anmelden"
