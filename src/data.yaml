@@ -2,8 +2,8 @@ site:
     meta:
       title: "Moderne Fotoverwaltung nach Schlagworten"
       description: "Organisieren mit Schlagworten, Teilen mit deinen Geräten und langfristiges Sichern für deine Bilder."
-    slogan: "Organisiere deine Bilder mit hierarchischen Schlagworten"
-    short: "Teile deine Bibliothek mit all deinen Geräten"
+    slogan: "Automatisches Sichern aller Fotos auf dem PC, ohne die Sortierung verlieren"
+    short: "Das Conshelv Archiv organisiert Fotos nach hierarchischen Tags und ermöglicht so verschiedene Sortierungen gleichzeitig. Durch Integration ins Dateisystem werden Bilder erkannt und Änderungen über das Heimnetz synchronisiert. So können Sie Fotos automatisch sichern und genau festlegen, welche Alben lokal gespeichert bleiben sollen. "
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "Das bietet Conshelv"
     sections:
@@ -34,12 +34,12 @@ site:
          - "Manuelles kopieren von der Kamera und synchronisieren zwischen Geräten gehören so der Vergangenheit an. Sogar Schlagworte können automatisch und mit KI zugewiesen werden."
          - "Bei Interesse am Plugin-System, kontaktieren sie bitte <a class='underline' href='mailto:info@conshelv.com'>info@conshelv.com</a>."
     cta:
-      text: "Jetzt anmelden"
+      text: "Jetzt deine Bilder sichern"
       desc: "Zum Newsletter Anmelden"
       href: "https://d472b0d2.sibforms.com/serve/MUIEABD-K7xsEewUxYV94JqQ6ydStzikCxgPVa2uR_VQ4bJY07_HBzanp1OEsXT8n7nTLLyNUFeMcD4mgoloxaRw_qOAtASUETOF7pwKiduaeS9VRlJDRIo1CGbZNNfmahAfJMG6QhBZiCRgHUUtTKmHDcnX9UcGwkSneZXple9vb_EzkkbSuNE0qIQkaQFAqdj7-tV4V4k9AjZ0"
       id: cta
     contact:
-      text: "Kontakt Aufnehmen"
+      text: "Kontakt"
       id: contact
-      desc: "Sind Sie interessiert, haben Sie Fragen oder Vorschläge?<br>Schreiben Sie an"
+      desc: "Für eine Demo der Early-Access-Version von Conshelv, Vorschläge oder Fragen:<br> Schreiben Sie an"
       mail: info@conshelv.com
