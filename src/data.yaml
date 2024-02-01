@@ -2,7 +2,7 @@ site:
     meta:
       title: "Moderne Fotoverwaltung nach Schlagworten"
       description: "Organisieren mit Schlagworten, Teilen mit deinen Geräten und langfristiges Sichern für deine Bilder."
-    slogan: "Automatisches Sichern aller Fotos auf dem PC, ohne die Sortierung verlieren"
+    slogan: "Automatisches Sichern aller Fotos auf dem PC, ohne die Sortierung zu verlieren"
     short: "Das Conshelv Archiv organisiert Fotos nach hierarchischen Tags und ermöglicht so verschiedene Sortierungen gleichzeitig. Durch Integration ins Dateisystem werden Bilder erkannt und Änderungen über das Heimnetz synchronisiert. So können Sie Fotos automatisch sichern und genau festlegen, welche Alben lokal gespeichert bleiben sollen. "
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "Das bietet Conshelv"
