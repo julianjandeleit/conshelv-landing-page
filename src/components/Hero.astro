@@ -24,9 +24,9 @@ const {
     </slot>
     <div class="text-neutral-content h-full p-4">
       <div class="flex flex-col justify-center text-center max-w-4xl h-full">
-        <h1 class="font-manrope mb-4 text-3xl font-extrabold text-neutral max-md:text-xl max-md:mb-0" set:html={title}></h1>
-        <p class="font-manrope mb-8 text-neutral font-[450] text-justify tracking-tight text-lg max-md:text-base max-md:mb-8 mt-2" set:html={short}></p>
-        <a href={cta_href} class="inline-block"><button class="btn btn-accent btnManagement-block normal-case text-accent-content text-lg px-24 max-md:text-sm w-full">{cta_text}</button></a>
+        <h1 class="font-manrope mb-4 text-3xl font-extrabold text-neutral max-md:text-base max-md:mb-0" set:html={title}></h1>
+        <p class="font-manrope mb-8 text-neutral font-[450] text-justify tracking-tight text-lg max-md:text-sm max-md:mb-8 mt-2" set:html={short}></p>
+        <a href={cta_href} class="inline-block"><button class="btn btn-accent btnManagement-block normal-case text-accent-content text-lg px-24 max-md:text-xs w-full">{cta_text}</button></a>
       </div>
     </div>
     <slot name="bottom">
