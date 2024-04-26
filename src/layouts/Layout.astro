@@ -21,6 +21,8 @@ import Cookie from "../components/cookie.astro";
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={`${description}`} />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body>
     <Cookie />
@@ -32,6 +34,20 @@ import Cookie from "../components/cookie.astro";
         attrib: section.img_attrib,
       }))}
     />
+    <script>
+      // @ts-expect-error
+      if (window.netlifyIdentity) {
+        // @ts-expect-error
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            // @ts-expect-error
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
 <style is:global>
