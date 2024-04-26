@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: src/assets/img
-public_folder: src/assets/img
+media_folder: public/assets/img
+public_folder: /assets/img
 # decap astro collections config
 collections:
   - name: "articles"

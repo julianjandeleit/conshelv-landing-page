@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+const blogEntries = await getCollection("articles");
+import Article from "../../layouts/Article.astro";
+---
+
+<Article
+    title="Articles"
+    description="Relevant articles about photo management, synchronization and more"
+>
+    <ul class="list-disc list-inside">
+        {
+            blogEntries.map((blogPostEntry) => (
+                <li>
+                    <>
+                        <a
+                            href={`/articles/${blogPostEntry.slug}`}
+                            class="underline bold"
+                        >
+                            {blogPostEntry.data.title}
+                        </a>
+                    </>
+                </li>
+            ))
+        }
+    </ul>
+</Article>
