@@ -1,17 +1,17 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: "src/assets/images"
-public_folder: "src/assets/images"
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 # decap astro collections config
 collections:
   - name: "articles"
     label: "Articles"
-    folder: "src/content/articles"
+    folder: "src/pages/articles"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "$/layouts/post.astro" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
