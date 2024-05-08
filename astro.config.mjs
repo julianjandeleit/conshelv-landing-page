@@ -7,6 +7,11 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+  server: {
+    headers: {
+        "Access-Control-Allow-Origin": "*"
+    }
+},
   integrations: [tailwind(),    partytown({
     // Adds dataLayer.push as a forwarding-event.
     config: {
