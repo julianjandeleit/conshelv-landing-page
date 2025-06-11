@@ -1,10 +1,9 @@
 ---
 title:  Reducing Cognitive Load for Visually Impaired Users in Navigating Complex Graph Structures like Filesystems
 date: 2023-08-01T03:21:44.941Z
-ogImage: /src/assets/img/speed.png
+ogImage: /assets/img/og-cognitiveload.png
 description: This post is a translation from a longer whitepaper that explores a specific use case of the concepts behind Conshelv and embeds them into historical context (recommended for technical inclined readers).
 ---
-# Reducing Cognitive Load for Visually Impaired Users in Navigating Complex Graph Structures like Filesystems
 
 _Note: The article was extracted from [this pdf](/assets/docs/Reducing_Cognitive_Load_for_Visually_Impaired_Users_in_Navigating_Complex_Graph_Structures.pdf) automatically to be shown as a blog entry. It explores the use of some principles behind Conshelv for visually impaired users in a more formal way and puts them in a techno-historical context. While they are not the main target group of Conshelv, the principles looked at still hold true for all people and benefits for a specific group often translates to all possible users._
 

@@ -5,23 +5,52 @@ import Article from "../../layouts/Article.astro";
 ---
 
 <Article
-    title="Articles"
-    description="Relevant articles about photo management, synchronization and more"
+  title="Articles"
+  description="Relevant articles about photo management, synchronization and more"
 >
-    <ul class="list-disc list-inside">
-        {
-            blogEntries.map((blogPostEntry) => (
-                <li>
-                    <>
-                        <a
-                            href={`/articles/${blogPostEntry.slug}`}
-                            class="underline bold"
-                        >
-                            {blogPostEntry.data.title}
-                        </a>
-                    </>
-                </li>
-            ))
-        }
+  <section class="space-y-6 px-4 sm:px-6 lg:px-8 py-8">
+    <ul class="space-y-6">
+      {
+        blogEntries.map((entry) => (
+          <li class="article-card">
+            <a href={`/articles/${entry.slug}`} class="block group">
+              <div class="flex flex-col sm:flex-row gap-4">
+                <img
+                  src={entry.data.ogImage}
+                  alt=""
+                  class="w-full sm:w-48 h-32 object-cover rounded-md border"
+                />
+                <div class="flex flex-col justify-between">
+                  <h2 class="text-xl font-semibold text-blue-800 group-hover:underline">
+                    {entry.data.title}
+                  </h2>
+                  <p class="text-sm text-gray-500 mt-1">
+                    {new Date(entry.data.date).toLocaleDateString("de-DE")}
+                  </p>
+                  <p class="text-gray-700 mt-2">
+                    {entry.data.description}
+                  </p>
+                </div>
+              </div>
+            </a>
+          </li>
+        ))
+      }
     </ul>
+  </section>
 </Article>
+
+<style>
+  .article-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .article-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+</style>

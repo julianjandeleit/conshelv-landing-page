@@ -41,5 +41,6 @@ site:
     contact:
       text: "Kontakt"
       id: contact
-      desc: "Für eine Demo der Early-Access-Version von Conshelv, Vorschläge oder Fragen:<br> Schreiben Sie an"
+      desc: "Für eine Demo der Early-Access-Version von Conshelv, Vorschläge oder Fragen:<br> Schreiben Sie auf Instagram an"
       mail: info@conshelv.com
+      instagram: conshelv
