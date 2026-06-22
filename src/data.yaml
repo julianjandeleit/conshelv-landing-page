@@ -1,8 +1,8 @@
 site:
     meta:
-      title: "The connected archive for your conserved memories"
+      title: "The connected archive to conserve your memories"
       description: "Connected Data·Connected Devices·Convenient Access"
-    slogan: "The connected archive for your conserved memories"
+    slogan: "The connected archive to conserve your memories"
     short: "<span class=\"text-xl block text-center\"><br>Connected Data · Connected Devices · Convenient Access</span><br><span>Conshelv is a local-first photo management software that helps you efficiently organize and access your photos across devices while keeping the full sovereignty of your data.</span>"
     hero: https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200
     sections_header: "This is how Conshelv helps you to manage your photos"
