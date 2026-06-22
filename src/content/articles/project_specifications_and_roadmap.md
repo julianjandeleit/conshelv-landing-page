@@ -3,6 +3,7 @@ title: Project Specifications and Roadmap
 date: 2025-06-11T00:00:00.000Z
 ogImage: /assets/img/og-project_specifications_and_roadmap.png
 description: To approach a big vision, it needs to be broken down into smaller, well defined pieces. This post defines a roadmap containing specifications for sub projects with the preliminary names "Conshelv Entity", "Conshelv Files" and "Conshelv Photo".
+draft: true
 ---
 
 Conshelv is about a modern software to organize personal files with metadata and store it in archives that can be dynamically queried and synced between devices. Small non-enterprise but professional projects could benefit as well.

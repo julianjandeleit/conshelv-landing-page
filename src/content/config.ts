@@ -6,7 +6,8 @@ const blogCollection = defineCollection({
     title: z.string(),
     date: z.string().or(z.date()), // ISO string or Date object
     description: z.string(),
-    ogImage: z.string(), // Optional: add .url() if validating image file format
+    ogImage: z.string(), // Optional: add .url() if validating image file format,
+    draft: z.boolean().optional(), // Optional field to mark drafts
   }),
 });
 
